@@ -1,15 +1,85 @@
-﻿
-@{
-    Layout = null;
+﻿@{
+    ViewData["Title"] = "Sothis";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Sothis</title>
-</head>
-<body>
-</body>
-</html>
+@* Content *@
+<div class="jumbotron-fluid">
+    <div class="container">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="~/img/data/characters/sothis.png" title="Sothis" style="width: 100%;" />
+                    </div>
+                    <div class="col-sm">
+                        <h2>Sothis - The Progenitor God, The Beginning</h2>
+                        <p><b>Bio:</b><br />An enigmatic being that appeared in Byleth's dreams. After saving Byleth with the power to rewind time - Divine Pulse - she speaks to them as if she's inside their head. Yet nobody else can see or hear her. She has no recollection of her identity and has the body of a young girl, but the tone of an old lady.</p>
+                        <p><b>Age:</b> ???</p>
+                        <p><b>Height</b>: 135 cm</p>
+                        <p><b>Birthday:</b> 20th of Horsebow Moon</p>
+                        <p><b><a asp-controller="Data" asp-action="Crests">Crest(s): </a></b><img src="~/img/data/crests/flames.png" title="Crest of Flames" /> Major Crest of Flames<br /><i>The Crest of the goddess who governs the world. Occasionally restores HP equal to 30% of damage dealt. Rarely raises MT and stops counterattacks.</i></p>
+                        <p><b>This character is an NPC and is not a playable character.</b></p>
+                    </div>
+                </div>
+            </div>
+            <hr />       
+            <div class="container" style="margin-top: 10px;">
+                <p><b>Stats:</b></p>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><b>Stat</b></th>
+                            <th scope="col">HP</th>
+                            <th scope="col">STR</th>
+                            <th scope="col">MAG</th>
+                            <th scope="col">DEX</th>
+                            <th scope="col">SPD</th>
+                            <th scope="col">LCK</th>
+                            <th scope="col">DEF</th>
+                            <th scope="col">RES</th>
+                            <th scope="col">CHA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>% on Level Up</b></th>
+                            <th scope="row">35</th>
+                            <th scope="row">30</th>
+                            <th scope="row">65</th>
+                            <th scope="row">40</th>
+                            <th scope="row">40</th>
+                            <th scope="row">65</th>
+                            <th scope="row">30</th>
+                            <th scope="row">60</th>
+                            <th scope="row">70</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Base</b></th>
+                            <th scope="row">26</th>
+                            <th scope="row">6</th>
+                            <th scope="row">12</th>
+                            <th scope="row">6</th>
+                            <th scope="row">6</th>
+                            <th scope="row">8</th>
+                            <th scope="row">6</th>
+                            <th scope="row">10</th>
+                            <th scope="row">10</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Max</b></th>
+                            <th scope="row">71</th>
+                            <th scope="row">43</th>
+                            <th scope="row">93</th>
+                            <th scope="row">56</th>
+                            <th scope="row">56</th>
+                            <th scope="row">89</th>
+                            <th scope="row">43</th>
+                            <th scope="row">85</th>
+                            <th scope="row">99</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>          
+        </div>
+    </div>
+</div>
