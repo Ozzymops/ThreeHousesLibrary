@@ -20,6 +20,21 @@ namespace ThreeHousesLibrary.Controllers
             return View();
         }
 
+        public IActionResult Classes()
+        {
+            return View();
+        }
+
+        public IActionResult Skills()
+        {
+            return View();
+        }
+
+        public IActionResult Routes()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
