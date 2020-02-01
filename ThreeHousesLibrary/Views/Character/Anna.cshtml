@@ -17,7 +17,7 @@
                         <p><b>Age:</b> 25</p>
                         <p><b>Height</b>: 168 cm</p>
                         <p><b>Birthday:</b> 9th of Garland Moon</p>
-                        <p><b><a asp-controller="Data" asp-action="Crests">Crest(s): </a></b><img src="~/img/data/crests/ernest.png" title="Crest of Ernest" /> Major Crest of Ernest<br /><i>A Crest long lost to history. Occasionally stops enemy counterattacks when using a weapon.</i></p>
+                        <p><b><a asp-controller="Home" asp-action="Crests">Crest(s): </a></b><img src="~/img/data/crests/ernest.png" title="Crest of Ernest" /> Major Crest of Ernest<br /><i>A Crest long lost to history. Occasionally stops enemy counterattacks when using a weapon.</i></p>
                     </div>
                 </div>
             </div>
@@ -25,12 +25,12 @@
             <div class="container" style="margin-top: 10px;">
                 <div class="row">
                     <div class="col-sm">
-                        <p><b>Starting <a asp-controller="Data" asp-action="Classes">class:</a></b><a asp-controller="Data" asp-action="ClassMyrmidon"><img src="~/img/data/classes/myrmidon.png" />Myrmidon</a></p>
+                        <p><b>Starting <a asp-controller="Home" asp-action="Classes">class:</a></b><a asp-controller="Class" asp-action="Myrmidon"><img src="~/img/data/classes/myrmidon.png" />Myrmidon</a></p>
                     </div>
                 </div>
             </div>
             <div class="container" style="margin-top: 10px;">
-                <p><b>Personal <a asp-controller="Data" asp-action="Abilities">Ability:</a></b></p>
+                <p><b>Personal <a asp-controller="Ability" asp-action="Abilities">Ability:</a></b></p>
                 <div class="row">
                     <div class="col-sm">
                         <p><img src="~/img/data/abilities/pomp-and-circumstance.png" title="Business Prosperity" style="width: 5%;" /><b>Business Prosperity:</b> <i>Grants LCK +5.</i></p>
@@ -110,18 +110,6 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row"><b>% on Level Up</b></th>
-                            <th scope="row">35</th>
-                            <th scope="row">35</th>
-                            <th scope="row">35</th>
-                            <th scope="row">45</th>
-                            <th scope="row">55</th>
-                            <th scope="row">45</th>
-                            <th scope="row">30</th>
-                            <th scope="row">40</th>
-                            <th scope="row">50</th>
-                        </tr>
-                        <tr>
                             <th scope="row"><b>Base</b></th>
                             <th scope="row">26</th>
                             <th scope="row">7</th>
@@ -145,11 +133,23 @@
                             <th scope="row">49</th>
                             <th scope="row">60</th>
                         </tr>
+                        <tr>
+                            <th scope="row"><b>Growth</b></th>
+                            <th scope="row">35%</th>
+                            <th scope="row">35%</th>
+                            <th scope="row">35%</th>
+                            <th scope="row">45%</th>
+                            <th scope="row">55%</th>
+                            <th scope="row">45%</th>
+                            <th scope="row">30%</th>
+                            <th scope="row">40%</th>
+                            <th scope="row">50%</th>
+                        </tr>
                     </tbody>
                 </table>
             </div>
             <div class="container" style="margin-top: 10px;">
-                <p><b>Character <a asp-controller="Data" asp-action="Abilities">Abilities:</a></b></p>
+                <p><b>Character <a asp-controller="Home" asp-action="Abilities">Abilities:</a></b></p>
                 <table class="table" style="text-align: center;">
                     <thead>
                         <tr>
@@ -188,7 +188,7 @@
                 </table>
             </div>
             <div class="container" style="margin-top: 10px;">
-                <p><b>Character Combat Arts / Spells:</b></p>
+                <p><b>Character <a asp-controller="Home" asp-action="CombatArtsAndSpells">Combat Arts / Spells:</a></b></p>
                 <table class="table" style="text-align: center;">
                     <thead>
                         <tr>

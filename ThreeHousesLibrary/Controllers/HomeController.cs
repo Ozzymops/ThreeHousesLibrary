@@ -20,22 +20,27 @@ namespace ThreeHousesLibrary.Controllers
             return View();
         }
 
+        public IActionResult Crests()
+        {
+            return View();
+        }
+
         public IActionResult Classes()
         {
             return View();
         }
 
-        public IActionResult Skills()
+        public IActionResult Abilities()
+        {
+            return View();
+        }
+
+        public IActionResult CombatArtsAndSpells()
         {
             return View();
         }
 
         public IActionResult Routes()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
         {
             return View();
         }

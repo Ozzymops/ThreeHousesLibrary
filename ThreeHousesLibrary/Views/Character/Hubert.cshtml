@@ -16,7 +16,7 @@
                         <h2>Hubert von Vestra - Emperor's Confidant</h2>
                         <p><b>Faction:</b> Adrestian Empire</p>
                         <p><b>Bio:</b><br />The strategist of the Black Eagles. He's the heir of Marquis Vestra's family and has served Edelgard from a young age. He'll use any means necessary to eliminate her obstacles. According to Edelgard, he's a cold, but reasonable person.</p>
-                        <p><b>Age:</b> 20 / 25</p>
+                        <p><b>Age:</b> 20</p>
                         <p><b>Height</b>: 188 cm</p>
                         <p><b>Birthday:</b> 17th of Great Tree Moon</p>
                     </div>
@@ -26,12 +26,12 @@
             <div class="container" style="margin-top: 10px;">
                 <div class="row">
                     <div class="col-sm">
-                        <p><b>Starting <a asp-controller="Data" asp-action="Classes">class:</a></b><a asp-controller="Data" asp-action="ClassNoble"><img src="~/img/data/classes/noble.png" />Noble</a></p>
+                        <p><b>Starting <a asp-controller="Home" asp-action="Classes">class:</a></b><a asp-controller="Class" asp-action="Noble"><img src="~/img/data/classes/noble.png" />Noble</a></p>
                     </div>
                 </div>
             </div>
             <div class="container" style="margin-top: 10px;">
-                <p><b>Personal <a asp-controller="Data" asp-action="Abilities">Ability:</a></b></p>
+                <p><b>Personal <a asp-controller="Home" asp-action="Abilities">Ability:</a></b></p>
                 <div class="row">
                     <div class="col-sm">
                         <p><img src="~/img/data/abilities/officer-duty.png" title="Officer Duty" style="width: 5%;" /><b>Officer Duty:</b> <i>Grants MT +5 with gambits.</i></p>
@@ -111,18 +111,6 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row"><b>% on Level Up</b></th>
-                            <th scope="row">35</th>
-                            <th scope="row">30</th>
-                            <th scope="row">55</th>
-                            <th scope="row">45</th>
-                            <th scope="row">45</th>
-                            <th scope="row">35</th>
-                            <th scope="row">25</th>
-                            <th scope="row">40</th>
-                            <th scope="row">35</th>
-                        </tr>
-                        <tr>
                             <th scope="row"><b>Base</b></th>
                             <th scope="row">22</th>
                             <th scope="row">6</th>
@@ -146,11 +134,23 @@
                             <th scope="row">57</th>
                             <th scope="row">49</th>
                         </tr>
+                        <tr>
+                            <th scope="row"><b>Growth</b></th>
+                            <th scope="row">35%</th>
+                            <th scope="row">30%</th>
+                            <th scope="row">55%</th>
+                            <th scope="row">45%</th>
+                            <th scope="row">45%</th>
+                            <th scope="row">35%</th>
+                            <th scope="row">25%</th>
+                            <th scope="row">40%</th>
+                            <th scope="row">35%</th>
+                        </tr>
                     </tbody>
                 </table>
             </div>
             <div class="container" style="margin-top: 10px;">
-                <p><b>Character <a asp-controller="Data" asp-action="Abilities">Abilities:</a></b></p>
+                <p><b>Character <a asp-controller="Home" asp-action="Abilities">Abilities:</a></b></p>
                 <table class="table" style="text-align: center;">
                     <thead>
                         <tr>
@@ -189,7 +189,7 @@
                 </table>
             </div>
             <div class="container" style="margin-top: 10px;">
-                <p><b>Character Combat Arts / Spells:</b></p>
+                <p><b>Character <a asp-controller="Home" asp-action="CombatArtsAndSpells">Combat Arts / Spells:</a></b></p>
                 <table class="table" style="text-align: center;">
                     <thead>
                         <tr>
