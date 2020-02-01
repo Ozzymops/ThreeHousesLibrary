@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FE:TH Library - @ViewData["Title"]</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+    </environment>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/sidebar.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FE:TH Library</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Characters">Characters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Classes">Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="CombatArtsAndSpells">Combat Arts/Spells</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Routes">Route-specific</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="sidebar-wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Characters</h3>
+            </div>
+            <ul class="list-unstyled">
+                <li class="active">
+                    <a href="#unaffiliated" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Unaffiliated</a>
+                    <ul class="list-item collapse list-unstyled" id="unaffiliated">
+                        <li><a asp-controller="Character" asp-action="Byleth">Byleth Eisner</a></li>
+                        <li><a asp-controller="Character" asp-action="Jeralt">Jeralt Eisner</a></li>
+                        <li><a asp-controller="Character" asp-action="Sothis">Sothis</a></li>
+                        <li><a asp-controller="Character" asp-action="Anna">Anna</a></li>
+                    </ul>
+                    <a href="#blackEagles" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Black Eagles</a>
+                    <ul class="list-item collapse list-unstyled" id="blackEagles">
+                        <li><a asp-controller="Character" asp-action="Edelgard">Edelgard von Hresvelg</a></li>
+                        <li><a asp-controller="Character" asp-action="Hubert">Hubert von Vestra</a></li>
+                        <li><a asp-controller="Character" asp-action="Dorothea">Dorothea Arnault</a></li>
+                        <li><a asp-controller="Character" asp-action="Ferdinand">Ferdinand von Aegir</a></li>
+                        <li><a asp-controller="Character" asp-action="Bernadetta">Bernadetta von Varley</a></li>
+                        <li><a asp-controller="Character" asp-action="Caspar">Caspar von Bergliez</a></li>
+                        <li><a asp-controller="Character" asp-action="Petra">Petra Macneary</a></li>
+                        <li><a asp-controller="Character" asp-action="Linhardt">Linhardt von Hevring</a></li>
+                        <li><a asp-controller="Character" asp-action="Jeritza">Jeritza von Hrym</a></li>
+                    </ul>
+                    <a href="#blueLions" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Blue Lions</a>
+                    <ul class="list-item collapse list-unstyled" id="blueLions">
+                        <li><a asp-controller="Character" asp-action="Dimitri">Dimitri Alexandre Blaiddyd</a></li>
+                        <li><a asp-controller="Character" asp-action="Dedue">Dedue Molinaro</a></li>
+                        <li><a asp-controller="Character" asp-action="Felix">Felix Hugo Fraldarius</a></li>
+                        <li><a asp-controller="Character" asp-action="Mercedes">Mercedes von Martritz</a></li>
+                        <li><a asp-controller="Character" asp-action="Ashe">Ashe Ubert</a></li>
+                        <li><a asp-controller="Character" asp-action="Annette">Annette Fantine Dominic</a></li>
+                        <li><a asp-controller="Character" asp-action="Sylvain">Sylvain Jose Gautier</a></li>
+                        <li><a asp-controller="Character" asp-action="Ingrid">Ingrid Brandl Galatea</a></li>
+                    </ul>
+                    <a href="#goldenDeer" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Golden Deer</a>
+                    <ul class="list-item collapse list-unstyled" id="goldenDeer">
+                        <li><a asp-controller="Character" asp-action="Claude">Claude von Riegan</a></li>
+                        <li><a asp-controller="Character" asp-action="Lorenz">Lorenz Hellman Gloucester</a></li>
+                        <li><a asp-controller="Character" asp-action="Hilda">Hilda Valentine Goneril</a></li>
+                        <li><a asp-controller="Character" asp-action="Raphael">Raphael Kirsten</a></li>
+                        <li><a asp-controller="Character" asp-action="Lysithea">Lysithea von Ordelia</a></li>
+                        <li><a asp-controller="Character" asp-action="Ignatz">Ignatz Victor</a></li>
+                        <li><a asp-controller="Character" asp-action="Marianne">Marianne von Edmund</a></li>
+                        <li><a asp-controller="Character" asp-action="Leonie">Leonie Pinelli</a></li>
+                    </ul>
+                    <a href="#churchOfSeiros" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Church of Seiros</a>
+                    <ul class="list-item collapse list-unstyled" id="churchOfSeiros">
+                        <li><a asp-controller="Character" asp-action="Rhea">Rhea</a></li>
+                        <li><a asp-controller="Character" asp-action="Manuela">Manuela Cassagranda</a></li>
+                        <li><a asp-controller="Character" asp-action="Hanneman">Hanneman von Essar</a></li>
+                        <li><a asp-controller="Character" asp-action="Seteth">Seteth</a></li>
+                        <li><a asp-controller="Character" asp-action="Flayn">Flayn</a></li>
+                        <li><a asp-controller="Character" asp-action="Cyril">Cyril</a></li>
+                        <li><a asp-controller="Character" asp-action="Catherine">Cassandra Rubens Charon</a></li>
+                        <li><a asp-controller="Character" asp-action="Alois">Alois Rangeld</a></li>
+                        <li><a asp-controller="Character" asp-action="Gilbert">Gilbert Pronislav</a></li>
+                        <li><a asp-controller="Character" asp-action="Shamir">Shamir Nevrand</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+        </script>
+    </environment>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/characterSidebar.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

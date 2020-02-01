@@ -1,0 +1,30 @@
+﻿.sidebar-wrapper {
+    display: flex;
+    align-items: stretch;
+    position: absolute;
+    left: 3%;
+}
+
+#sidebar {
+    min-width: 350px;
+    max-width: 350px;
+}
+
+a[data-toggle="collapse"] {
+    display: block;
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.list-item li {
+    padding-left: 20px;
+    list-style-type: square;
+    list-style-position: inside;
+}

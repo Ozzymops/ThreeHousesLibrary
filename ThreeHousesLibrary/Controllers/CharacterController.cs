@@ -8,7 +8,7 @@ namespace ThreeHousesLibrary.Controllers
 {
     public class CharacterController : Controller
     {
-        // Unaffiliated
+        #region Unaffiliated
         public IActionResult Byleth()
         {
             return View();
@@ -28,8 +28,8 @@ namespace ThreeHousesLibrary.Controllers
         {
             return View();
         }
-        
-        // Black Eagles
+        #endregion
+        #region Black Eagles
         public IActionResult Edelgard()
         {
             return View();
@@ -74,8 +74,8 @@ namespace ThreeHousesLibrary.Controllers
         {
             return View();
         }
-
-        // Blue Lions
+        #endregion
+        #region Blue Lions
         public IActionResult Dimitri()
         {
             return View();
@@ -115,8 +115,8 @@ namespace ThreeHousesLibrary.Controllers
         {
             return View();
         }
-
-        // Golden Deer
+        #endregion
+        #region Golden Deer
         public IActionResult Claude()
         {
             return View();
@@ -156,8 +156,8 @@ namespace ThreeHousesLibrary.Controllers
         {
             return View();
         }
-
-        // Church of Seiros
+        #endregion
+        #region Church of Seiros
         public IActionResult Rhea()
         {
             return View();
@@ -207,5 +207,6 @@ namespace ThreeHousesLibrary.Controllers
         {
             return View();
         }
+        #endregion
     }
 }
