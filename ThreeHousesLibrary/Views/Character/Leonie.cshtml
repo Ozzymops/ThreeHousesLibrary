@@ -1,15 +1,276 @@
-﻿
-@{
-    Layout = null;
+﻿@{
+    ViewData["Title"] = "Leonie";
+    Layout = "_CharacterLayout";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Leonie</title>
-</head>
-<body>
-</body>
-</html>
+@* Content *@
+<div class="jumbotron-fluid">
+    <div class="container">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="~/img/data/characters/leonie.png" title="Leonie" style="width: 80%;" />
+                        <img src="~/img/data/characters/leonie-ts.png" title="Leonie" style="width: 80%;" />
+                    </div>
+                    <div class="col-sm">
+                        <h2>Leonie Pinelli - Blade Breaker II</h2>
+                        <p><b>Faction:</b> Leicester Alliance</p>
+                        <p><b>Bio:</b><br />A hunter's daughter from Sauin Village, within the Alliance. To become a money-making mercenary, she entered the Officer's Academy with money loaned from her village. She trains hard and lives frugally every day, so she can repay her village's money and goodwill. She calls Jeralt, who motivated her to become a mercenary, her master and claims that she's his top student.</p>
+                        <p><b>Age:</b> 19</p>
+                        <p><b>Height</b>: 168 cm</p>
+                        <p><b>Birthday:</b> 21st of Verdant Moon</p>
+                        <p><b>Recruitment:</b> Byleth needs at least 15 STR and a C-rank in <img src="~/img/data/skills/lance.png" title="Lance" />.</p>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="container" style="margin-top: 10px;">
+                <div class="row">
+                    <div class="col-sm">
+                        <p><b>Starting <a asp-controller="Home" asp-action="Classes">class:</a></b><a asp-controller="Class" asp-action="Commoner"><img src="~/img/data/classes/commoner.png" />Commoner</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 10px;">
+                <p><b>Personal <a asp-controller="Home" asp-action="Abilities">Ability:</a></b></p>
+                <div class="row">
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/rivalry.png" title="Rivalry" style="width: 5%;" /><b>Rivalry:</b> <i>If a male ally is adjacent, unit deals 2 extra damage and takes 2 less damage during combat.</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 10px;">
+                <p><b>Proficiencies:</b></p>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><b>Skill</b></th>
+                            <th scope="col"><img src="~/img/data/skills/sword.png" title="Sword" /></th>
+                            <th scope="col"><img src="~/img/data/skills/lance.png" title="Lance" /></th>
+                            <th scope="col"><img src="~/img/data/skills/axe.png" title="Axe" /></th>
+                            <th scope="col"><img src="~/img/data/skills/bow.png" title="Bow" /></th>
+                            <th scope="col"><img src="~/img/data/skills/brawl.png" title="Brawling" /></th>
+                            <th scope="col"><img src="~/img/data/skills/reason.png" title="Reason" /></th>
+                            <th scope="col"><img src="~/img/data/skills/faith.png" title="Faith" /></th>
+                            <th scope="col"><img src="~/img/data/skills/authority.png" title="Authority" /></th>
+                            <th scope="col"><img src="~/img/data/skills/heavy-armor.png" title="Heavy Armor" /></th>
+                            <th scope="col"><img src="~/img/data/skills/riding.png" title="Riding" /></th>
+                            <th scope="col"><img src="~/img/data/skills/flying.png" title="Flying" /></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>Proficiency</b></th>
+                            <th scope="row"></th>
+                            <th scope="row"><img src="~/img/data/skills/strength.png" title="Strength" /></th>
+                            <th scope="row"></th>
+                            <th scope="row"><img src="~/img/data/skills/strength.png" title="Strength" /></th>
+                            <th scope="row"></th>
+                            <th scope="row"></th>
+                            <th scope="row"></th>
+                            <th scope="row"></th>
+                            <th scope="row"></th>
+                            <th scope="row"><img src="~/img/data/skills/strength.png" title="Strength" /></th>
+                            <th scope="row"></th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Starting value</b></th>
+                            <th scope="row">E</th>
+                            <th scope="row">D+</th>
+                            <th scope="row">E</th>
+                            <th scope="row">E+</th>
+                            <th scope="row">E</th>
+                            <th scope="row">E</th>
+                            <th scope="row">E</th>
+                            <th scope="row">E</th>
+                            <th scope="row">E</th>
+                            <th scope="row">E+</th>
+                            <th scope="row">E</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container" style="margin-top: 10px;">
+                <p><b>Stats:</b></p>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><b>Stat</b></th>
+                            <th scope="col">HP</th>
+                            <th scope="col">STR</th>
+                            <th scope="col">MAG</th>
+                            <th scope="col">DEX</th>
+                            <th scope="col">SPD</th>
+                            <th scope="col">LCK</th>
+                            <th scope="col">DEF</th>
+                            <th scope="col">RES</th>
+                            <th scope="col">CHA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>Base</b></th>
+                            <th scope="row">26</th>
+                            <th scope="row">9</th>
+                            <th scope="row">5</th>
+                            <th scope="row">8</th>
+                            <th scope="row">9</th>
+                            <th scope="row">6</th>
+                            <th scope="row">7</th>
+                            <th scope="row">2</th>
+                            <th scope="row">7</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Max</b></th>
+                            <th scope="row">78</th>
+                            <th scope="row">59</th>
+                            <th scope="row">38</th>
+                            <th scope="row">76</th>
+                            <th scope="row">84</th>
+                            <th scope="row">56</th>
+                            <th scope="row">57</th>
+                            <th scope="row">36</th>
+                            <th scope="row">57</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Growth</b></th>
+                            <th scope="row">40%</th>
+                            <th scope="row">40%</th>
+                            <th scope="row">20%</th>
+                            <th scope="row">55%</th>
+                            <th scope="row">60%</th>
+                            <th scope="row">40%</th>
+                            <th scope="row">40%</th>
+                            <th scope="row">15%</th>
+                            <th scope="row">40%</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container" style="margin-top: 10px;">
+                <p><b>Character <a asp-controller="Home" asp-action="Abilities">Abilities:</a></b></p>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><b>Skill level</b></th>
+                            <th scope="col">E</th>
+                            <th scope="col">E+</th>
+                            <th scope="col">D</th>
+                            <th scope="col">D+</th>
+                            <th scope="col">C</th>
+                            <th scope="col">C+</th>
+                            <th scope="col">B</th>
+                            <th scope="col">B+</th>
+                            <th scope="col">A</th>
+                            <th scope="col">A+</th>
+                            <th scope="col">S</th>
+                            <th scope="col">S+</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b><img src="~/img/data/skills/authority.png" title="Authority" /></b></th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row"><img src="~/img/data/abilities/battalion-desperation.png" title="Battalion Desperation" style="width: 50%;" /></th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container" style="margin-top: 10px;">
+                <p><b>Character <a asp-controller="Home" asp-action="CombatArtsAndSpells">Combat Arts / Spells:</a></b></p>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><b>Skill level</b></th>
+                            <th scope="col">E</th>
+                            <th scope="col">E+</th>
+                            <th scope="col">D</th>
+                            <th scope="col">D+</th>
+                            <th scope="col">C</th>
+                            <th scope="col">C+</th>
+                            <th scope="col">B</th>
+                            <th scope="col">B+</th>
+                            <th scope="col">A</th>
+                            <th scope="col">A+</th>
+                            <th scope="col">S</th>
+                            <th scope="col">S+</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b><img src="~/img/data/skills/lance.png" title="Lance" /></b></th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">Monster Pierce</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">Lance Jab</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b><img src="~/img/data/skills/bow.png" title="Bow" /></b></th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">Break Shot</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">Point-Blank Volley</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b><img src="~/img/data/skills/reason.png" title="Black/Dark magic" /></b></th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">Fire</th>
+                            <th scope="row">-</th>
+                            <th scope="row">Bolganone</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">Ragnarok</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b><img src="~/img/data/skills/faith.png" title="White magic" /></b></th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">Heal</th>
+                            <th scope="row">Nosferatu</th>
+                            <th scope="row">Physic</th>
+                            <th scope="row">-</th>
+                            <th scope="row">Restore</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                            <th scope="row">-</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
