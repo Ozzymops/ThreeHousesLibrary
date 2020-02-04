@@ -1,0 +1,86 @@
+﻿@{
+    ViewData["Title"] = "Classes";
+}
+
+@* Content *@
+<div class="jumbotron-fluid">
+    <div class="container">
+        <div style="margin: 0 auto; margin-top: 20px; text-align: center;">
+            @* Unique *@
+            <h2>Unique classes - LV 1</h2>
+            <div class="list-inline">
+                <a class="list-inline-item" asp-controller="Class" asp-action="Commoner" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/commoner.png" title="Commoner" />Commoner</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Noble" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/noble.png" title="Noble" />Noble</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Dancer" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/dancer.png" title="Dancer" />Dancer</a>
+            </div>
+            <div class="list-inline" style="margin-top: 20px;">
+                <a class="list-inline-item" asp-controller="Class" asp-action="EnlightenedOne" style="background-color: darkgreen; color: lightblue; width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/enlightened-one.png" title="Enlightened One" />Enlightened One</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="ArmoredLord" style="background-color: crimson; color: lightblue; width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/armored-lord.png" title="Armored Lord" />Armored Lord</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Emperor" style="background-color: crimson; color: lightblue; width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/emperor.png" title="Emperor" />Emperor</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="HighLord" style="background-color: navy; color: lightblue; width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/high-lord.png" title="High Lord" />High Lord</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="GreatLord" style="background-color: navy; color: lightblue; width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/great-lord.png" title="Great Lord" />Great Lord</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="WyvernMaster" style="background-color: peru; color: lightblue; width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/wyvern-master.png" title="Wyvern Master" />Wyvern Master</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Barbarossa" style="background-color: peru; color: lightblue; width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/barbarossa.png" title="Barbarossa" />Barbarossa</a>
+            </div>
+            @* Beginner *@
+            <h2 style="margin-top: 20px;">Beginner classes - LV 5</h2>
+            <div class="list-inline">
+                <a class="list-inline-item" asp-controller="Class" asp-action="Myrmidon" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/myrmidon.png" title="Myrmidon" />Myrmidon</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Soldier" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/soldier.png" title="Soldier" />Soldier</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Fighter" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/fighter.png" title="Fighter" />Fighter</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Monk" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/monk.png" title="Monk" />Monk</a>
+            </div>
+            @* Intermediate *@
+            <h2 style="margin-top: 20px;">Intermediate classes - LV 10</h2>
+            <div class="list-inline">
+                <a class="list-inline-item" asp-controller="Class" asp-action="Lord" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/lord.png" title="Lord" />Lord</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Mercenary" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/mercenary.png" title="Mercenary" />Mercenary</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Thief" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/thief.png" title="Thief" />Thief</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="ArmoredKnight" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/armored-knight.png" title="Armored Knight" />Armored Knight</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Cavalier" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/cavalier.png" title="Cavalier" />Cavalier</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Brigand" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/brigand.png" title="Brigand" />Brigand</a>
+            </div>
+            <div class="list-inline" style="margin-top: 20px;">
+                <a class="list-inline-item" asp-controller="Class" asp-action="Archer" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/archer.png" title="Archer" />Archer</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Brawler" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/brawler.png" title="Brawler" />Brawler</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Mage" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/mage.png" title="Mage" />Mage</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="DarkMage" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/dark-mage.png" title="Dark Mage" />Dark Mage</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Priest" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/priest.png" title="Priest" />Priest</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="PegasusKnight" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/pegasus-knight.png" title="Pegasus Knight" />Pegasus Knight</a>
+            </div>
+            @* Advanced *@
+            <h2 style="margin-top: 20px;">Advanced classes - LV 20</h2>
+            <div class="list-inline">
+                <a class="list-inline-item" asp-controller="Class" asp-action="Hero" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/hero.png" title="Hero" />Hero</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Swordmaster" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/swordmaster.png" title="Swordmaster" />Swordmaster</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Assassin" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/assassin.png" title="Assassin" />Assassin</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="FortressKnight" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/fortress-knight.png" title="Fortress Knight" />Fortress Knight</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Paladin" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/paladin.png" title="Paladin" />Paladin</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="WyvernRider" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/wyvern-rider.png" title="Wyvern Rider" />Wyvern Rider</a>
+            </div>
+            <div class="list-inline" style="margin-top: 20px;">
+                <a class="list-inline-item" asp-controller="Class" asp-action="Warrior" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/warrior.png" title="Warrior" />Warrior</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Sniper" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/sniper.png" title="Sniper" />Sniper</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Grappler" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/grappler.png" title="Grappler" />Grappler</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Warlock" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/warlock.png" title="Warlock" />Warlock</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="DarkBishop" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/dark-bishop.png" title="Dark Bishop" />Dark Bishop</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Bishop" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/bishop.png" title="Bishop" />Bishop</a>
+            </div>
+            @* Master *@
+            <h2 style="margin-top: 20px;">Master classes - LV 30</h2>
+            <div class="list-inline">
+                <a class="list-inline-item" asp-controller="Class" asp-action="FalconKnight" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/falcon-knight.png" title="Falcon Knight" />Falcon Knight</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="WyvernLord" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/wyvern-lord.png" title="Wyvern Lord" />Wyvern Lord</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="MortalSavant" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/mortal-savant.png" title="Mortal Savant" />Mortal Savant</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="GreatKnight" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/great-knight.png" title="Great Knight" />Great Knight</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="BowKnight" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/bow-knight.png" title="Bow Knight" />Bow Knight</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="DarkKnight" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/dark-knight.png" title="Dark Knight" />Dark Knight</a>
+            </div>
+            <div class="list-inline" style="margin-top: 20px;">
+                <a class="list-inline-item" asp-controller="Class" asp-action="HolyKnight" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/holy-knight.png" title="Holy Knight" />Holy Knight</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="WarMaster" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/war-master.png" title="War Master" /><br />War Master</a>
+                <a class="list-inline-item" asp-controller="Class" asp-action="Gremory" style="width: 6vw; border-radius: 5px; border: 1px solid rgba(0, 0, 0, 0.125);"><img src="~/img/data/classes/gremory.png" title="Gremory" />Gremory</a>
+            </div>
+        </div>
+    </div>
+</div>

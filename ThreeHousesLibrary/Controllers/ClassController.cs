@@ -8,7 +8,12 @@ namespace ThreeHousesLibrary.Controllers
 {
     public class ClassController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Commoner()
+        {
+            return View();
+        }
+
+        public IActionResult Noble()
         {
             return View();
         }
