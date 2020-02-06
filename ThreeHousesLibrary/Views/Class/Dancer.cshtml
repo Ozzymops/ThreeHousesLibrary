@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Commoner";
+    ViewData["Title"] = "Dancer";
     Layout = "_ClassLayout";
 }
 
@@ -8,8 +8,21 @@
     <div class="container">
         <div class="container">
             <div class="container">
-                <h2>Commoner <img src="~/img/data/classes/commoner.png" title="Commoner" /></h2>
-                <p><i>Those of common birth, who must compensate for a lack of noble privilege with tenacity.</i></p>
+                <h2>Dancer <img src="~/img/data/classes/dancer.png" title="Dancer" /></h2>
+                <p><i>The Dancer energizes allies with inspiring movement, allowing them to act again.</i></p>
+                <p><i>The Dancer is unlocked by winning the White Heron Cup and is exclusive to the winning dancer.</i></p>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <table class="table" style="text-align: left;">
+                    <tr>
+                        <th scope="col" style="text-align: center; vertical-align: middle; width: 7vw;"><b>Recommended for:</b></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Ferdinand"><img src="~/img/data/characters/ferdinand.png" title="Ferdinand" style="width: 5vw;" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Dorothea"><img src="~/img/data/characters/dorothea.png" title="Dorothea" style="width: 5.5vw;" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Annette"><img src="~/img/data/characters/annette.png" title="Annette" style="width: 4.5vw;" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Marianne"><img src="~/img/data/characters/marianne.png" title="Marianne" style="width: 4.5vw;" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Flayn"><img src="~/img/data/characters/flayn.png" title="Flayn" style="width: 5vw;" /></a></th>
+                    </tr>
+                </table>
             </div>
             <div class="container" style="margin-top: 20px;">
                 <table class="table" style="text-align: center;">
@@ -29,7 +42,7 @@
                             <th scope="col"><img src="~/img/data/skills/flying.png" title="Flying" /></th>
                         </tr>
                     </thead>
-                    <tbody>                       
+                    <tbody>
                         <tr>
                             <th scope="row"></th>
                             <th scope="row">E</th>
@@ -75,10 +88,10 @@
                     <tbody>
                         <tr>
                             <th scope="col"></th>
+                            <th scope="col"><img src="~/img/data/abilities/dance.png" title="Dance" style="width: 3vw;" /></th>
+                            <th scope="col"><img src="~/img/data/abilities/sword-avoid.png" title="Sword Avo +20" style="width: 3vw;" /></th>
                             <th scope="col">-</th>
-                            <th scope="col">-</th>
-                            <th scope="col">-</th>
-                            <th scope="col"><img src="~/img/data/abilities/hp-plus-five.png" title="HP +5" style="width: 3vw;" /></th>
+                            <th scope="col"><img src="~/img/data/abilities/special-dance.png" title="Special Dance" style="width: 3vw;" /></th>
                         </tr>
                     </tbody>
                 </table>
@@ -112,19 +125,19 @@
                             <th scope="row">0</th>
                             <th scope="row">0</th>
                             <th scope="row">0</th>
-                            <th scope="row">4</th>
+                            <th scope="row">6</th>
                         </tr>
                         <tr>
                             <th scope="row"><b>Growth</b></th>
+                            <th scope="row">20</th>
+                            <th scope="row">-5</th>
                             <th scope="row">0</th>
                             <th scope="row">0</th>
                             <th scope="row">0</th>
                             <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">0</th>
+                            <th scope="row">-5</th>
+                            <th scope="row">-5</th>
+                            <th scope="row">10</th>
                             <th scope="row"></th>
                         </tr>
                     </tbody>

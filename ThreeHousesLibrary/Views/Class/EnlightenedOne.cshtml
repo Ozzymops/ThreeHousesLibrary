@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Commoner";
+    ViewData["Title"] = "Enlightened One";
     Layout = "_ClassLayout";
 }
 
@@ -8,8 +8,18 @@
     <div class="container">
         <div class="container">
             <div class="container">
-                <h2>Commoner <img src="~/img/data/classes/commoner.png" title="Commoner" /></h2>
-                <p><i>Those of common birth, who must compensate for a lack of noble privilege with tenacity.</i></p>
+                <h2>Enlightened One <img src="~/img/data/classes/enlightened-one.png" title="Enlightened One" /></h2>
+                <p><i>A holy one, blessed by the goddess herself.</i></p>
+                <p><i>The Enlightened One is Byleth's unique class.</i></p>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <table class="table" style="text-align: left;">
+                    <tr>
+                        <th scope="col" style="text-align: center; vertical-align: middle; width: 7vw;"><b>Recommended for:</b></th>
+                        <th scope="col" style="width: 7vw;"><a asp-controller="Character" asp-action="Byleth"><img src="~/img/data/characters/byleth-m-ts.png" title="Byleth [M]" style="width: 7vw;" /></a></th>
+                        <th scope="col" style="width: 7vw;"><a asp-controller="Character" asp-action="Byleth"><img src="~/img/data/characters/byleth-f-ts.png" title="Byleth [F]" style="width: 7vw;" /></a></th>
+                    </tr>
+                </table>
             </div>
             <div class="container" style="margin-top: 20px;">
                 <table class="table" style="text-align: center;">
@@ -29,7 +39,7 @@
                             <th scope="col"><img src="~/img/data/skills/flying.png" title="Flying" /></th>
                         </tr>
                     </thead>
-                    <tbody>                       
+                    <tbody>
                         <tr>
                             <th scope="row"></th>
                             <th scope="row">E</th>
@@ -51,13 +61,14 @@
                 <table class="table" style="text-align: center;">
                     <tr>
                         <th scope="col" style="vertical-align: middle; width: 7vw;"><b>Weaponry</b></th>
-                        <th scope="col"><img src="~/img/data/skills/sword.png" title="Sword" /></th>
+                        <th scope="col"><img src="~/img/data/skills/sword.png" title="Sword" /><img src="~/img/data/skills/strength.png" title="Strength" /></th>
                         <th scope="col"><img src="~/img/data/skills/lance.png" title="Lance" /></th>
                         <th scope="col"><img src="~/img/data/skills/axe.png" title="Axe" /></th>
                         <th scope="col"><img src="~/img/data/skills/bow.png" title="Bow" /></th>
-                        <th scope="col"><img src="~/img/data/skills/brawl.png" title="Brawling" /></th>
+                        <th scope="col"><img src="~/img/data/skills/brawl.png" title="Brawling" /><img src="~/img/data/skills/strength.png" title="Strength" /></th>
                         <th scope="col"><img src="~/img/data/skills/reason.png" title="Reason" /></th>
-                        <th scope="col"><img src="~/img/data/skills/faith.png" title="Faith" /></th>
+                        <th scope="col"><img src="~/img/data/skills/faith.png" title="Faith" /><img src="~/img/data/skills/strength.png" title="Strength" /></th>
+                        <th scope="col"><img src="~/img/data/skills/authority.png" title="Authority" /><img src="~/img/data/skills/strength.png" title="Strength" /></th>
                     </tr>
                 </table>
             </div>
@@ -75,10 +86,10 @@
                     <tbody>
                         <tr>
                             <th scope="col"></th>
+                            <th scope="col"><img src="~/img/data/abilities/swordfaire.png" title="Swordfaire" style="width: 3vw;" /></th>
+                            <th scope="col"><img src="~/img/data/abilities/terrain-resistance.png" title="Terrain Resistance" style="width: 3vw;" /></th>
                             <th scope="col">-</th>
-                            <th scope="col">-</th>
-                            <th scope="col">-</th>
-                            <th scope="col"><img src="~/img/data/abilities/hp-plus-five.png" title="HP +5" style="width: 3vw;" /></th>
+                            <th scope="col"><img src="~/img/data/abilities/sacred-power.png" title="Sacred Power" style="width: 3vw;" /></th>
                         </tr>
                     </tbody>
                 </table>
@@ -103,28 +114,28 @@
                     <tbody>
                         <tr>
                             <th scope="row"><b>Base</b></th>
+                            <th scope="row">28</th>
+                            <th scope="row">17</th>
+                            <th scope="row">8</th>
+                            <th scope="row">12</th>
+                            <th scope="row">14</th>
+                            <th scope="row">10</th>
+                            <th scope="row">12</th>
+                            <th scope="row">10</th>
                             <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">4</th>
+                            <th scope="row">6</th>
                         </tr>
                         <tr>
                             <th scope="row"><b>Growth</b></th>
+                            <th scope="row">20</th>
+                            <th scope="row">10</th>
+                            <th scope="row">10</th>
                             <th scope="row">0</th>
                             <th scope="row">0</th>
                             <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">0</th>
-                            <th scope="row">0</th>
+                            <th scope="row">5</th>
+                            <th scope="row">5</th>
+                            <th scope="row">10</th>
                             <th scope="row"></th>
                         </tr>
                     </tbody>
