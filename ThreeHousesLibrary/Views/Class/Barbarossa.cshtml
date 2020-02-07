@@ -1,15 +1,151 @@
-﻿
-@{
-    Layout = null;
+﻿@{
+    ViewData["Title"] = "Barbarossa";
+    Layout = "_ClassLayout";
 }
 
-<!DOCTYPE html>
+<input type="hidden" id="group" value="0" />
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Barbarossa</title>
-</head>
-<body>
-</body>
-</html>
+@* Content *@
+<div class="jumbotron-fluid">
+    <div class="container">
+        <div class="container">
+            <div class="container">
+                <h2>Barbarossa <img src="~/img/data/classes/barbarossa.png" title="Barbarossa" /></h2>
+                <p><i>In the tradition of Almyra, Claude wields a bow while riding the skies on his wyvern.</i></p>
+                <p><i>The Barbarossa is Claude's 2nd unique class.</i></p>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Recommended <a asp-controller="Home" asp-action="Characters">characters</a> for this class</h3>
+                <table class="table" style="text-align: center;">
+                    <tr>
+                        <th scope="col" style="width: 7vw;"><a asp-controller="Character" asp-action="Claude"><img src="~/img/data/characters/claude-ts.png" title="Claude" style="width: 7vw;" /></a></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Certificate Requirements</h3>
+                <p><i>Claude will automatically swap to this class in Verdant Wind, Part 2, Chapter 17.</i></p>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><img src="~/img/data/skills/sword.png" title="Sword" /></th>
+                            <th scope="col"><img src="~/img/data/skills/lance.png" title="Lance" /></th>
+                            <th scope="col"><img src="~/img/data/skills/axe.png" title="Axe" /></th>
+                            <th scope="col"><img src="~/img/data/skills/bow.png" title="Bow" /></th>
+                            <th scope="col"><img src="~/img/data/skills/brawl.png" title="Brawling" /></th>
+                            <th scope="col"><img src="~/img/data/skills/reason.png" title="Reason" /></th>
+                            <th scope="col"><img src="~/img/data/skills/faith.png" title="Faith" /></th>
+                            <th scope="col"><img src="~/img/data/skills/authority.png" title="Authority" /></th>
+                            <th scope="col"><img src="~/img/data/skills/heavy-armor.png" title="Heavy Armor" /></th>
+                            <th scope="col"><img src="~/img/data/skills/riding.png" title="Riding" /></th>
+                            <th scope="col"><img src="~/img/data/skills/flying.png" title="Flying" /></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">E</th>
+                            <th scope="row">E</th>
+                            <th scope="row">E</th>
+                            <th scope="row">E</th>
+                            <th scope="row">E</th>
+                            <th scope="row">E</th>
+                            <th scope="row">E</th>
+                            <th scope="row">E</th>
+                            <th scope="row">E</th>
+                            <th scope="row">E</th>
+                            <th scope="row">E</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <div class="row">
+                    <div class="col-sm">
+                        <h3>Class Proficiencies</h3>
+                        <table class="table" style="text-align: center;">
+                            <tr>
+                                <th scope="col"><img src="~/img/data/skills/bow.png" title="Bow" /></th>
+                                <th scope="col"><img src="~/img/data/skills/authority.png" title="Authority" /></th>
+                                <th scope="col"><img src="~/img/data/skills/flying.png" title="Flying" /></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm">
+                        <h3>Class Restrictions</h3>
+                        <table class="table" style="text-align: center;">
+                            <tr>
+                                <th scope="col"><img src="~/img/data/skills/bow.png" title="Bow" /></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class <a asp-controller="Home" asp-action="Abilities">Abilities</a></h3>
+                <div class="row">
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/bowfaire.png" title="Bowfaire" style="width: 3vw;" /><b>Bowfaire</b><br /><i>Grants ATK +5 when using a bow.</i></p>
+                    </div>
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/charm.png" title="Charm" style="width: 3vw;" /><b>Charm</b><br /><i>Adjacent allies deal 3 extra damage during combat.</i></p>
+                    </div>
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/canto.png" title="Canto" style="width: 3vw;" /><b>Canto</b><br /><i>Allows unit to move again after completing certain actions, if there is movement remaining.</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class Mastery</h3>
+                <p><img src="~/img/data/abilities/ca_bow.png" title="Wind God" style="width: 3vw;" /><b>Wind God:</b> <i>A bow attack with exceptional range. Exclusive to the Barbarossa class.</i></p>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class Stats</h3>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><b>Stat</b></th>
+                            <th scope="col">HP</th>
+                            <th scope="col">STR</th>
+                            <th scope="col">MAG</th>
+                            <th scope="col">DEX</th>
+                            <th scope="col">SPD</th>
+                            <th scope="col">LCK</th>
+                            <th scope="col">DEF</th>
+                            <th scope="col">RES</th>
+                            <th scope="col">CHA</th>
+                            <th scope="col">MOV</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>Base</b></th>
+                            <th scope="row">35</th>
+                            <th scope="row">18</th>
+                            <th scope="row">10</th>
+                            <th scope="row">14</th>
+                            <th scope="row">20</th>
+                            <th scope="row">12</th>
+                            <th scope="row">15</th>
+                            <th scope="row">12</th>
+                            <th scope="row">0</th>
+                            <th scope="row">8</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Growth</b></th>
+                            <th scope="row">30</th>
+                            <th scope="row">15</th>
+                            <th scope="row">0</th>
+                            <th scope="row">0</th>
+                            <th scope="row">10</th>
+                            <th scope="row">0</th>
+                            <th scope="row">5</th>
+                            <th scope="row">0</th>
+                            <th scope="row">10</th>
+                            <th scope="row"></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

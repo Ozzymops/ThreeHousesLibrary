@@ -3,6 +3,8 @@
     Layout = "_ClassLayout";
 }
 
+<input type="hidden" id="group" value="0" />
+
 @* Content *@
 <div class="jumbotron-fluid">
     <div class="container">
@@ -13,19 +15,20 @@
                 <p><i>The Enlightened One is Byleth's unique class.</i></p>
             </div>
             <div class="container" style="margin-top: 20px;">
-                <table class="table" style="text-align: left;">
+                <h3>Recommended <a asp-controller="Home" asp-action="Characters">characters</a> for this class</h3>
+                <table class="table" style="text-align: center;">
                     <tr>
-                        <th scope="col" style="text-align: center; vertical-align: middle; width: 7vw;"><b>Recommended for:</b></th>
-                        <th scope="col" style="width: 7vw;"><a asp-controller="Character" asp-action="Byleth"><img src="~/img/data/characters/byleth-m-ts.png" title="Byleth [M]" style="width: 7vw;" /></a></th>
-                        <th scope="col" style="width: 7vw;"><a asp-controller="Character" asp-action="Byleth"><img src="~/img/data/characters/byleth-f-ts.png" title="Byleth [F]" style="width: 7vw;" /></a></th>
+                        <th scope="col" style="width: 7vw;"><a asp-controller="Character" asp-action="Byleth"><img src="~/img/data/characters/byleth-m-ts.png" title="Byleth [M]" style="width: 9vw;" /></a></th>
+                        <th scope="col" style="width: 7vw;"><a asp-controller="Character" asp-action="Byleth"><img src="~/img/data/characters/byleth-f-ts.png" title="Byleth [F]" style="width: 9vw;" /></a></th>
                     </tr>
                 </table>
             </div>
             <div class="container" style="margin-top: 20px;">
+                <h3>Certificate Requirements</h3>
+                <p><i>Byleth will automatically swap to this class in Part 1, Chapter 11.</i></p>
                 <table class="table" style="text-align: center;">
                     <thead>
                         <tr>
-                            <th scope="col" style="vertical-align: middle; width: 7vw;"><b>Skill requirements</b></th>
                             <th scope="col"><img src="~/img/data/skills/sword.png" title="Sword" /></th>
                             <th scope="col"><img src="~/img/data/skills/lance.png" title="Lance" /></th>
                             <th scope="col"><img src="~/img/data/skills/axe.png" title="Axe" /></th>
@@ -41,7 +44,6 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row"></th>
                             <th scope="row">E</th>
                             <th scope="row">E</th>
                             <th scope="row">E</th>
@@ -58,43 +60,51 @@
                 </table>
             </div>
             <div class="container" style="margin-top: 20px;">
-                <table class="table" style="text-align: center;">
-                    <tr>
-                        <th scope="col" style="vertical-align: middle; width: 7vw;"><b>Weaponry</b></th>
-                        <th scope="col"><img src="~/img/data/skills/sword.png" title="Sword" /><img src="~/img/data/skills/strength.png" title="Strength" /></th>
-                        <th scope="col"><img src="~/img/data/skills/lance.png" title="Lance" /></th>
-                        <th scope="col"><img src="~/img/data/skills/axe.png" title="Axe" /></th>
-                        <th scope="col"><img src="~/img/data/skills/bow.png" title="Bow" /></th>
-                        <th scope="col"><img src="~/img/data/skills/brawl.png" title="Brawling" /><img src="~/img/data/skills/strength.png" title="Strength" /></th>
-                        <th scope="col"><img src="~/img/data/skills/reason.png" title="Reason" /></th>
-                        <th scope="col"><img src="~/img/data/skills/faith.png" title="Faith" /><img src="~/img/data/skills/strength.png" title="Strength" /></th>
-                        <th scope="col"><img src="~/img/data/skills/authority.png" title="Authority" /><img src="~/img/data/skills/strength.png" title="Strength" /></th>
-                    </tr>
-                </table>
+                <div class="row">
+                    <div class="col-sm">
+                        <h3>Class Proficiencies</h3>
+                        <table class="table" style="text-align: center;">
+                            <tr>
+                                <th scope="col"><img src="~/img/data/skills/sword.png" title="Sword" /></th>
+                                <th scope="col"><img src="~/img/data/skills/brawl.png" title="Brawling" /></th>
+                                <th scope="col"><img src="~/img/data/skills/faith.png" title="Faith" /></th>
+                                <th scope="col"><img src="~/img/data/skills/authority.png" title="Authority" /></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm">
+                        <h3>Class Restrictions</h3>
+                        <table class="table" style="text-align: center;">
+                            <tr>
+                                <th scope="col"><img src="~/img/data/skills/sword.png" title="Sword" /></th>
+                                <th scope="col"><img src="~/img/data/skills/axe.png" title="Axe" /></th>
+                                <th scope="col"><img src="~/img/data/skills/lance.png" title="Lance" /></th>
+                                <th scope="col"><img src="~/img/data/skills/lance.png" title="Bow" /></th>
+                                <th scope="col"><img src="~/img/data/skills/brawl.png" title="Brawling" /></th>
+                                <th scope="col"><img src="~/img/data/skills/reason.png" title="Black / Dark Magic" /></th>
+                                <th scope="col"><img src="~/img/data/skills/faith.png" title="White Magic" /></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
             <div class="container" style="margin-top: 20px;">
-                <table class="table" style="text-align: center; vertical-align: middle;">
-                    <thead>
-                        <tr>
-                            <th scope="col" style="vertical-align: middle; width: 7vw;"><b>Abilities</b></th>
-                            <th scope="col" style="vertical-align: middle; width: 7vw;">1</th>
-                            <th scope="col" style="vertical-align: middle; width: 7vw;">2</th>
-                            <th scope="col" style="vertical-align: middle; width: 7vw;">3</th>
-                            <th scope="col" style="width: 7vw;"><img src="~/img/data/skills/class-mastery.png" title="Class Mastery" style="width: 3vw;" /></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col"><img src="~/img/data/abilities/swordfaire.png" title="Swordfaire" style="width: 3vw;" /></th>
-                            <th scope="col"><img src="~/img/data/abilities/terrain-resistance.png" title="Terrain Resistance" style="width: 3vw;" /></th>
-                            <th scope="col">-</th>
-                            <th scope="col"><img src="~/img/data/abilities/sacred-power.png" title="Sacred Power" style="width: 3vw;" /></th>
-                        </tr>
-                    </tbody>
-                </table>
+                <h3>Class <a asp-controller="Home" asp-action="Abilities">Abilities</a></h3>
+                <div class="row">
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/swordfaire.png" title="Swordfaire" style="width: 3vw;" /><b>Swordfaire</b><br /><i>Grants ATK +5 when using a sword.</i></p>
+                    </div>
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/terrain-resistance.png" title="Terrain Resistance" style="width: 3vw;" /><b>Terrain Resistance</b><br /><i>Nullifies damage from terrain.</i></p>
+                    </div>
+                </div>
             </div>
-            <div class="container" style="margin-top: 10px;">
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class Mastery</h3>
+                <p><img src="~/img/data/abilities/sacred-power.png" title="Sacred Power" style="width: 3vw;" /><b>Sacred Power:</b> <i>Adjacent allies deal 3 extra damage and take 3 less damage during combat.</i></p>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class Stats</h3>
                 <table class="table" style="text-align: center;">
                     <thead>
                         <tr>
@@ -134,8 +144,8 @@
                             <th scope="row">0</th>
                             <th scope="row">0</th>
                             <th scope="row">5</th>
+                            <th scope="row">0</th>
                             <th scope="row">5</th>
-                            <th scope="row">10</th>
                             <th scope="row"></th>
                         </tr>
                     </tbody>
