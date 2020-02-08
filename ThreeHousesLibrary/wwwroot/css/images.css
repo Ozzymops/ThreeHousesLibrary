@@ -1,0 +1,35 @@
+﻿img.unaffiliated {
+    background-color: gray;
+    border-radius: 25px;
+    height: 15vh;
+}
+
+img.byleth {
+    background-color: darkgreen;
+    border-radius: 25px;
+    height: 15vh;
+}
+
+img.blackEagles {
+    background-color: crimson;
+    border-radius: 25px;
+    height: 15vh;
+}
+
+img.blueLions {
+    background-color: navy;
+    border-radius: 25px;
+    height: 15vh;
+}
+
+img.goldenDeer {
+    background-color: peru;
+    border-radius: 25px;
+    height: 15vh;
+}
+
+img.churchOfSeiros {
+    background-color: silver;
+    border-radius: 25px;
+    height: 15vh;
+}
