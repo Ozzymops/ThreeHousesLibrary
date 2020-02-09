@@ -39,6 +39,11 @@ namespace ThreeHousesLibrary.Controllers
             return View();
         }
 
+        public IActionResult DeathKnight()
+        {
+            return View();
+        }
+
         public IActionResult HighLord()
         {
             return View();

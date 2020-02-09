@@ -1,0 +1,121 @@
+﻿@{
+    ViewData["Title"] = "Death Knight";
+    Layout = "_ClassLayout";
+}
+
+<input type="hidden" id="group" value="0" />
+
+@* Content *@
+<div class="jumbotron-fluid">
+    <div class="container">
+        <div class="container">
+            <div class="container">
+                <h2>Death Knight <img src="~/img/data/classes/death-knight.png" title="Death Knight" /></h2>
+                <p><i>A knight in dark armor who is able to use magic and can move again after attacking.</i></p>
+                <p><i>The Death Knight is Jeritza's unique class.</i></p>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Recommended <a asp-controller="Home" asp-action="Characters">characters</a> for this class</h3>
+                <table class="table" style="text-align: center;">
+                    <tr>
+                        <th scope="col"><a asp-controller="Character" asp-action="Jeritza"><img class="blackEagles" src="~/img/data/characters/jeritza-ts.png" title="Jeritza" /></a></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Certificate Requirements</h3>
+                <p><i>Jeritza will automatically start with this class in Crimson Flower, Part 2, Chapter 13.</i></p>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <div class="row">
+                    <div class="col-sm">
+                        <h3>Class Proficiencies</h3>
+                        <table class="table" style="text-align: center;">
+                            <tr>
+                                <th scope="col"><img src="~/img/data/skills/lance.png" title="Lance" /></th>
+                                <th scope="col"><img src="~/img/data/skills/reason.png" title="Reason" /></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm">
+                        <h3>Class Restrictions</h3>
+                        <table class="table" style="text-align: center;">
+                            <tr>
+                                <th scope="col"><img src="~/img/data/skills/lance.png" title="Lance" /></th>
+                                <th scope="col"><img src="~/img/data/skills/reason.png" title="Black / Dark Magic" /></th>
+                                <th scope="col"><img src="~/img/data/skills/faith.png" title="White Magic" /></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class <a asp-controller="Home" asp-action="Abilities">Abilities</a></h3>
+                <div class="row">
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/lancefaire.png" title="Lancefaire" style="width: 3vw;" /><b>Lancefaire</b><br /><i>Grants ATK +5 when using a lance.</i></p>
+                    </div>
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/canto.png" title="Canto" style="width: 3vw;" /><b>Canto</b><br /><i>Allows unit to move again after completing certain actions, if there is MOV remaining.</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class Mastery</h3>
+                <div class="row">
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/counterattack.png" title="Counterattack" style="width: 3vw;" /><b>Counterattack</b><br /><i>Allows unit to counterattack regardless of distance to attacker.</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class Stats</h3>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><b>Stat</b></th>
+                            <th scope="col">HP</th>
+                            <th scope="col">STR</th>
+                            <th scope="col">MAG</th>
+                            <th scope="col">DEX</th>
+                            <th scope="col">SPD</th>
+                            <th scope="col">LCK</th>
+                            <th scope="col">DEF</th>
+                            <th scope="col">RES</th>
+                            <th scope="col">CHA</th>
+                            <th scope="col">MOV</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>Base</b></th>
+                            <th scope="row">32</th>
+                            <th scope="row">10</th>
+                            <th scope="row">17</th>
+                            <th scope="row">14</th>
+                            <th scope="row">16</th>
+                            <th scope="row">12</th>
+                            <th scope="row">13</th>
+                            <th scope="row">15</th>
+                            <th scope="row">0</th>
+                            <th scope="row">7</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Growth</b></th>
+                            <th scope="row">30</th>
+                            <th scope="row">10</th>
+                            <th scope="row">10</th>
+                            <th scope="row">0</th>
+                            <th scope="row">-5</th>
+                            <th scope="row">0</th>
+                            <th scope="row">5</th>
+                            <th scope="row">5</th>
+                            <th scope="row">0</th>
+                            <th scope="row"></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

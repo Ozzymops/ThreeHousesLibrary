@@ -3,58 +3,82 @@
 }
 
 @* Content *@
+@* Content *@
 <div class="jumbotron-fluid">
     <div class="container">
-        <div class="list-group" style="margin: 0 auto; margin-top: 20px; text-align: center;">
-            @* Other *@
+        <div style="margin: 0 auto; margin-top: 20px; text-align: center;">
+            @* Unaffiliated *@
             <h2>Unaffiliated</h2>
-            <a class="list-group-item" asp-controller="Character" asp-action="Byleth"><img src="~/img/data/characters/byleth-m.png" title="Byleth [M]" style="width: 14.7%;" /><img src="~/img/data/characters/byleth-m-ts.png" title="Progenitor God Byleth [M]" style="width: 14.7%;" /><img src="~/img/data/characters/byleth-f.png" title="Byleth [F]" style="width: 15%;" /><img src="~/img/data/characters/byleth-f-ts.png" title="Progenitor God Byleth [F]" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Jeralt"><img src="~/img/data/characters/jeralt.png" title="Jeralt" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Sothis"><img src="~/img/data/characters/sothis.png" title="Sothis" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Anna"><img src="~/img/data/characters/anna.png" title="Anna" style="width: 15%;" /></a>
+            <div class="list-inline">
+                <a class="list-inline-item" asp-controller="Character" asp-action="Byleth"><img class="byleth lord" src="~/img/data/characters/byleth-m-mixed.png" title="Byleth [M]" /><img class="byleth lord" style="margin-left: 10px;" src="~/img/data/characters/byleth-f-mixed.png" title="Byleth [F]" /><br />Byleth Eisner</a>
+                <br />
+                <a class="list-inline-item" asp-controller="Character" asp-action="Jeralt"><img class="unaffiliated" src="~/img/data/characters/jeralt.png" title="Jeralt" /><br />Jeralt Eisner</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Sothis"><img class="unaffiliated" src="~/img/data/characters/sothis.png" title="Sothis" /><br />Sothis</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Anna"><img class="unaffiliated dlc" src="~/img/data/characters/anna.png" title="Anna" /><br />Anna</a>
+            </div>
             @* Black Eagles *@
-            <h2 style="margin-top: 20px;"><img src="~/img/data/routes/black-eagles.png" title="Black Eagles" style="width: 7%;" /> Black Eagles / Crimson Flower <img src="~/img/data/routes/adrestian-empire.png" title="Adrestian Empire" style="width: 7%;" /></h2>
-            <a class="list-group-item" asp-controller="Character" asp-action="Edelgard"><img src="~/img/data/characters/edelgard.png" title="Edelgard" style="width: 13.7%;" /><img src="~/img/data/characters/edelgard-ts.png" title="Edelgard" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Hubert"><img src="~/img/data/characters/hubert.png" title="Hubert" style="width: 15%;" /><img src="~/img/data/characters/hubert-ts.png" title="Hubert" style="width: 15.6%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Dorothea"><img src="~/img/data/characters/dorothea.png" title="Dorothea" style="width: 15%;" /><img src="~/img/data/characters/dorothea-ts.png" title="Dorothea" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Ferdinand"><img src="~/img/data/characters/ferdinand.png" title="Ferdinand" style="width: 15%;" /><img src="~/img/data/characters/ferdinand-ts.png" title="Ferdinand" style="width: 15.4%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Bernadetta"><img src="~/img/data/characters/bernadetta.png" title="Bernadetta" style="width: 15%;" /><img src="~/img/data/characters/bernadetta-ts.png" title="Bernadetta" style="width: 17.2%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Caspar"><img src="~/img/data/characters/caspar.png" title="Caspar" style="width: 15%;" /><img src="~/img/data/characters/caspar-ts.png" title="Caspar" style="width: 16.5%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Petra"><img src="~/img/data/characters/petra.png" title="Petra" style="width: 15%;" /><img src="~/img/data/characters/petra-ts.png" title="Petra" style="width: 16%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Linhardt"><img src="~/img/data/characters/linhardt.png" title="Linhardt" style="width: 16.5%;" /><img src="~/img/data/characters/linhardt-ts.png" title="Linhardt" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Jeritza"><img src="~/img/data/characters/jeritza.png" title="Jeritza" style="width: 15%;" /><img src="~/img/data/characters/jeritza-ts.png" title="Death Knight" style="width: 15%;" /></a>
+            <h2 style="margin-top: 20px;"><img class="banner" src="~/img/data/routes/black-eagles.png" title="Black Eagles" />Black Eagles - <i>Crimson Flower</i><img class="banner" src="~/img/data/routes/adrestian-empire.png" title="Adrestian Empire" /></h2>
+            <div class="list-inline">
+                <a class="list-inline-item" asp-controller="Character" asp-action="Edelgard"><img class="blackEagles lord" src="~/img/data/characters/edelgard-mixed.png" title="Edelgard" /><br />Edelgard von Hresvelg</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Hubert"><img class="blackEagles" src="~/img/data/characters/hubert-mixed.png" title="Hubert" /><br />Hubert von Vestra</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Dorothea"><img class="blackEagles" src="~/img/data/characters/dorothea-mixed.png" title="Dorothea" /><br />Dorothea Arnault</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Ferdinand"><img class="blackEagles" src="~/img/data/characters/ferdinand-mixed.png" title="Ferdinand" /><br />Ferdinand von Aegir</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Bernadetta"><img class="blackEagles" src="~/img/data/characters/bernadetta-mixed.png" title="Bernadetta" /><br />Bernadetta von Varley</a>
+                <br />
+                <a class="list-inline-item" asp-controller="Character" asp-action="Caspar"><img class="blackEagles" src="~/img/data/characters/caspar-mixed.png" title="Caspar" /><br />Caspar von Bergliez</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Petra"><img class="blackEagles" src="~/img/data/characters/petra-mixed.png" title="Petra" /><br />Petra Macneary</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Linhardt"><img class="blackEagles" src="~/img/data/characters/linhardt-mixed.png" title="Linhardt" /><br />Linhardt von Hevring</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Jeritza"><img class="blackEagles dlc" src="~/img/data/characters/jeritza-mixed.png" title="Jeritza" /><br />Jeritza von Hrym</a>
+            </div>
             @* Blue Lions *@
-            <h2 style="margin-top: 20px;"><img src="~/img/data/routes/blue-lions.png" title="Blue Lions" style="width: 7%;" /> Blue Lions / Azure Moon <img src="~/img/data/routes/holy-kingdom-of-faerghus.png" title="Holy Kingdom of Faerghus" style="width: 7%;" /></h2>
-            <a class="list-group-item" asp-controller="Character" asp-action="Dimitri"><img src="~/img/data/characters/dimitri.png" title="Dimitri" style="width: 15%;" /><img src="~/img/data/characters/dimitri-ts.png" title="Dimitri" style="width: 15%;" /><img src="~/img/data/characters/dimitri-ts-eyepatch.png" title="Dimitri" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Dedue"><img src="~/img/data/characters/dedue.png" title="Dedue" style="width: 15%;" /><img src="~/img/data/characters/dedue-ts.png" title="Dedue" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Felix"><img src="~/img/data/characters/felix.png" title="Felix" style="width: 15%;" /><img src="~/img/data/characters/felix-ts.png" title="Felix" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Mercedes"><img src="~/img/data/characters/mercedes.png" title="Mercedes" style="width: 15%;" /><img src="~/img/data/characters/mercedes-ts.png" title="Mercedes" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Ashe"><img src="~/img/data/characters/ashe.png" title="Ashe" style="width: 15%;" /><img src="~/img/data/characters/ashe-ts.png" title="Ashe" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Annette"><img src="~/img/data/characters/annette.png" title="Annette" style="width: 15%;" /><img src="~/img/data/characters/annette-ts.png" title="Annette" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Sylvain"><img src="~/img/data/characters/sylvain.png" title="Sylvain" style="width: 15%;" /><img src="~/img/data/characters/sylvain-ts.png" title="Sylvain" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Ingrid"><img src="~/img/data/characters/ingrid.png" title="Ingrid" style="width: 15%;" /><img src="~/img/data/characters/ingrid-ts.png" title="Ingrid" style="width: 15%;" /></a>
+            <h2 style="margin-top: 20px;"><img class="banner" src="~/img/data/routes/blue-lions.png" title="Blue Lions" />Blue Lions - <i>Azure Moon</i><img class="banner" src="~/img/data/routes/holy-kingdom-of-faerghus.png" title="Holy Kingdom of Faerghus" /></h2>
+            <div class="list-inline">
+                <a class="list-inline-item" asp-controller="Character" asp-action="Dimitri"><img class="blueLions lord" src="~/img/data/characters/dimitri-mixed.png" title="Dimitri" /><br />Dimitri Alexandre Blaiddyd</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Dedue"><img class="blueLions" src="~/img/data/characters/dedue-mixed.png" title="Dedue" /><br />Dedue Molinaro</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Felix"><img class="blueLions" src="~/img/data/characters/felix-mixed.png" title="Felix" /><br />Felix Hugo Fraldarius</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Mercedes"><img class="blueLions" src="~/img/data/characters/mercedes-mixed.png" title="Mercedes" /><br />Mercedes von Martritz</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Ashe"><img class="blueLions" src="~/img/data/characters/ashe-mixed.png" title="Ashe" /><br />Ashe Ubert</a>
+                <br />
+                <a class="list-inline-item" asp-controller="Character" asp-action="Annette"><img class="blueLions" src="~/img/data/characters/annette-mixed.png" title="Annette" /><br />Annette Fantine Dominic</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Sylvain"><img class="blueLions" src="~/img/data/characters/sylvain-mixed.png" title="Sylvain" /><br />Sylvain Jose Gautier</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Ingrid"><img class="blueLions" src="~/img/data/characters/ingrid-mixed.png" title="Ingrid" /><br />Ingrid Brandl Galatea</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Gilbert"><img class="blueLions" src="~/img/data/characters/gilbert.png" title="Gilbert" /><br />Gilbert Pronislav</a>
+            </div>
             @* Golden Deer *@
-            <h2 style="margin-top: 20px;"><img src="~/img/data/routes/golden-deer.png" title="Golden Deer" style="width: 7%;" /> Golden Deer / Verdant Wind <img src="~/img/data/routes/leicester-alliance.png" title="Leicester Alliance" style="width: 7%;" /></h2>
-            <a class="list-group-item" asp-controller="Character" asp-action="Claude"><img src="~/img/data/characters/claude.png" title="Claude" style="width: 13.2%;" /><img src="~/img/data/characters/claude-ts.png" title="Claude" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Lorenz"><img src="~/img/data/characters/lorenz.png" title="Lorenz" style="width: 15%;" /><img src="~/img/data/characters/lorenz-ts.png" title="Lorenz" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Hilda"><img src="~/img/data/characters/hilda.png" title="Hilda" style="width: 15%;" /><img src="~/img/data/characters/hilda-ts.png" title="Hilda" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Raphael"><img src="~/img/data/characters/raphael.png" title="Raphael" style="width: 15%;" /><img src="~/img/data/characters/raphael-ts.png" title="Raphael" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Lysithea"><img src="~/img/data/characters/lysithea.png" title="Lysithea" style="width: 15%;" /><img src="~/img/data/characters/lysithea-ts.png" title="Lysithea" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Ignatz"><img src="~/img/data/characters/ignatz.png" title="Ignatz" style="width: 15%;" /><img src="~/img/data/characters/ignatz-ts.png" title="Ignatz" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Marianne"><img src="~/img/data/characters/marianne.png" title="Marianne" style="width: 15%;" /><img src="~/img/data/characters/marianne-ts.png" title="Marianne" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Leonie"><img src="~/img/data/characters/leonie.png" title="Leonie" style="width: 15%;" /><img src="~/img/data/characters/leonie-ts.png" title="Leonie" style="width: 15%;" /></a>
-            @* Church *@
-            <h2 style="margin-top: 20px;"><img src="~/img/data/routes/knights-of-seiros.png" title="Knights of Seiros" style="width: 7%;" /> Knights & Church of Seiros / Silver Snow <img src="~/img/data/routes/church-of-seiros.png" title="Church of Seiros" style="width: 7%;" /></h2>
-            <a class="list-group-item" asp-controller="Character" asp-action="Rhea"><img src="~/img/data/characters/rhea.png" title="Lady Rhea" style="width: 15%;" /><img src="~/img/data/characters/rhea-weak.png" title="Lady Rhea" style="width: 15%;" /><img src="~/img/data/characters/rhea-seiros.png" title="Seiros" style="width: 13.7%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Manuela"><img src="~/img/data/characters/manuela.png" title="Manuela" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Hanneman"><img src="~/img/data/characters/hanneman.png" title="Hanneman" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Seteth"><img src="~/img/data/characters/seteth.png" title="Seteth" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Flayn"><img src="~/img/data/characters/flayn.png" title="Flayn" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Cyril"><img src="~/img/data/characters/cyril.png" title="Cyril" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Catherine"><img src="~/img/data/characters/catherine.png" title="Catherine" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Alois"><img src="~/img/data/characters/alois.png" title="Alois" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Gilbert"><img src="~/img/data/characters/gilbert.png" title="Gilbert" style="width: 15%;" /></a>
-            <a class="list-group-item" asp-controller="Character" asp-action="Shamir"><img src="~/img/data/characters/shamir.png" title="Shamir" style="width: 15%;" /></a>
+            <h2 style="margin-top: 20px;"><img class="banner" src="~/img/data/routes/golden-deer.png" title="Golden Deer" />Golden Deer - <i>Verdant Wind</i><img class="banner" src="~/img/data/routes/leicester-alliance.png" title="Leicester Alliance" /></h2>
+            <div class="list-inline">
+                <a class="list-inline-item" asp-controller="Character" asp-action="Claude"><img class="goldenDeer lord" src="~/img/data/characters/claude-mixed.png" title="Claude" /><br />Claude von Riegan</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Lorenz"><img class="goldenDeer" src="~/img/data/characters/lorenz-mixed.png" title="Lorenz" /><br />Lorenz Hellman Gloucester</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Hilda"><img class="goldenDeer" src="~/img/data/characters/hilda-mixed.png" title="Hilda" /><br />Hilda Valentine Goneril</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Raphael"><img class="goldenDeer" src="~/img/data/characters/raphael-mixed.png" title="Raphael" /><br />Raphael Kirsten</a>
+                <br />
+                <a class="list-inline-item" asp-controller="Character" asp-action="Lysithea"><img class="goldenDeer" src="~/img/data/characters/lysithea-mixed.png" title="Lysithea" /><br />Lysithea von Ordelia</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Ignatz"><img class="goldenDeer" src="~/img/data/characters/ignatz-mixed.png" title="Ignatz" /><br />Ignatz Victor</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Marianne"><img class="goldenDeer" src="~/img/data/characters/marianne-mixed.png" title="Marianne" /><br />Marianne von Edmund</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Leonie"><img class="goldenDeer" src="~/img/data/characters/leonie-mixed.png" title="Leonie" /><br />Leonie Pinelli</a>
+            </div>
+            @* Church of Seiros *@
+            <h2 style="margin-top: 20px;"><img class="banner" src="~/img/data/routes/church-of-seiros.png" title="Church of Seiros" />Church & Knights of Seiros - <i>Silver Snow</i><img class="banner" src="~/img/data/routes/knights-of-seiros.png" title="Knights of Seiros" /></h2>
+            <div class="list-inline">
+                <a class="list-inline-item" asp-controller="Character" asp-action="Rhea"><img class="churchOfSeiros" src="~/img/data/characters/rhea.png" title="Rhea" /><br />Rhea</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Manuela"><img class="churchOfSeiros" src="~/img/data/characters/manuela.png" title="Manuela" /><br />Manuela Cassagranda</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Hanneman"><img class="churchOfSeiros" src="~/img/data/characters/hanneman.png" title="Hanneman" /><br />Hanneman von Essar</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Seteth"><img class="churchOfSeiros" src="~/img/data/characters/seteth.png" title="Seteth" /><br />Seteth</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Flayn"><img class="churchOfSeiros" src="~/img/data/characters/flayn.png" title="Flayn" /><br />Flayn</a>
+                <br />
+                <a class="list-inline-item" asp-controller="Character" asp-action="Cyril"><img class="churchOfSeiros" src="~/img/data/characters/cyril-mixed.png" title="Cyril" /><br />Cyril</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Catherine"><img class="churchOfSeiros" src="~/img/data/characters/catherine.png" title="Catherine" /><br />Cassandra Rubens Charon</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Alois"><img class="churchOfSeiros" src="~/img/data/characters/alois.png" title="Alois" /><br />Alois Rangeld</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Shamir"><img class="churchOfSeiros" src="~/img/data/characters/shamir.png" title="Shamir" /><br />Shamir Nevrand</a>
+            </div>
+            @* Ashen Wolves *@
+            <h2 style="margin-top: 20px;">Ashen Wolves - <i>Cindered Shadows</i></h2>
+            <div class="list-inline">
+                <a class="list-inline-item" asp-controller="Character" asp-action="Yuri"><img class="ashenWolves dlc" src="~/img/data/characters/yuri.png" title="Yuri" /><br />Yuri</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Hapi"><img class="ashenWolves dlc" src="~/img/data/characters/hapi.png" title="Hapi" /><br />Hapi</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Balthus"><img class="ashenWolves dlc" src="~/img/data/characters/balthus.png" title="Balthus" /><br />Balthus</a>
+                <a class="list-inline-item" asp-controller="Character" asp-action="Constance"><img class="ashenWolves dlc" src="~/img/data/characters/constance.png" title="Constance" /><br />Constance</a>
+            </div>
         </div>
     </div>
 </div>

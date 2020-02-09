@@ -1,15 +1,147 @@
-﻿
-@{
-    Layout = null;
+﻿@{
+    ViewData["Title"] = "War Master";
+    Layout = "_ClassLayout";
 }
 
-<!DOCTYPE html>
+<input type="hidden" id="group" value="4" />
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>WarMaster</title>
-</head>
-<body>
-</body>
-</html>
+@* Content *@
+<div class="jumbotron-fluid">
+    <div class="container">
+        <div class="container">
+            <div class="container">
+                <h2>War Master <img src="~/img/data/classes/war-master.png" title="War Master" /></h2>
+                <p><i>A master of the axe and hand-to-hand combat, the War Master pulverizes enemies with massive strength.</i></p>
+                <p><i>The War Master is gender-locked to male characters only.</i></p>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Recommended <a asp-controller="Home" asp-action="Characters">characters</a> for this class</h3>
+                <table class="table" style="text-align: center;">
+                    <tr>
+                        <th scope="col"><a asp-controller="Character" asp-action="Caspar"><img class="blackEagles" src="~/img/data/characters/caspar-ts.png" title="Caspar" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Dedue"><img class="blueLions" src="~/img/data/characters/dedue-ts.png" title="Dedue" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Felix"><img class="blueLions" src="~/img/data/characters/felix-ts.png" title="Felix" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Ashe"><img class="blueLions" src="~/img/data/characters/ashe-ts.png" title="Ashe" /></a></th>
+                    </tr>
+                    <tr>
+                        <th scope="col"><a asp-controller="Character" asp-action="Raphael"><img class="goldenDeer" src="~/img/data/characters/raphael-ts.png" title="Raphael" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Cyril"><img class="churchOfSeiros" src="~/img/data/characters/cyril-ts.png" title="Cyril" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Alois"><img class="churchOfSeiros" src="~/img/data/characters/alois.png" title="Alois" /></a></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Certificate Requirements</h3>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><img src="~/img/data/skills/axe.png" title="Axe" /></th>
+                            <th scope="col"><img src="~/img/data/skills/brawl.png" title="Brawling" /></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>A</b></th>
+                            <th scope="row"><b>A</b></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <div class="row">
+                    <div class="col-sm">
+                        <h3>Class Proficiencies</h3>
+                        <table class="table" style="text-align: center;">
+                            <tr>
+                                <th scope="col"><img src="~/img/data/skills/axe.png" title="Axe" /></th>
+                                <th scope="col"><img src="~/img/data/skills/brawl.png" title="Brawling" /></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm">
+                        <h3>Class Restrictions</h3>
+                        <table class="table" style="text-align: center;">
+                            <tr>
+                                <th scope="col"><img src="~/img/data/skills/axe.png" title="Axe" /></th>
+                                <th scope="col"><img src="~/img/data/skills/brawl.png" title="Brawling" /></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class <a asp-controller="Home" asp-action="Abilities">Abilities</a></h3>
+                <div class="row">
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/axefaire.png" title="Axefaire" style="width: 3vw;" /><b>Axefaire</b><br /><i>Grants ATK +5 when using an axe.</i></p>
+                    </div>
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/fistfaire.png" title="Fistfaire" style="width: 3vw;" /><b>Fistfaire</b><br /><i>Grants ATK +5 when brawling.</i></p>
+                    </div>
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/crit-plus-twenty.png" title="Crit +20" style="width: 3vw;" /><b>Crit +20</b><br /><i>Increases CRIT by 20.</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class Mastery</h3>
+                <div class="row">
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/quick-riposte.png" title="Quick Riposte" style="width: 3vw;" /><b>Quick Riposte</b><br /><i>If foe initiates combat while unit's HP is less or equal to 50%, unit makes guaranteed follow-up attack.</i></p>
+                    </div>
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/ca_brawl.png" title="War Master's Strike" style="width: 3vw;" /><b>War Master's Strike</b><br /><i>An attack with high HIT that is effective against all enemies. Exclusive to the War Master Class.</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class Stats</h3>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><b>Stat</b></th>
+                            <th scope="col">HP</th>
+                            <th scope="col">STR</th>
+                            <th scope="col">MAG</th>
+                            <th scope="col">DEX</th>
+                            <th scope="col">SPD</th>
+                            <th scope="col">LCK</th>
+                            <th scope="col">DEF</th>
+                            <th scope="col">RES</th>
+                            <th scope="col">CHA</th>
+                            <th scope="col">MOV</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>Base</b></th>
+                            <th scope="row">33</th>
+                            <th scope="row">20</th>
+                            <th scope="row">10</th>
+                            <th scope="row">14</th>
+                            <th scope="row">16</th>
+                            <th scope="row">12</th>
+                            <th scope="row">15</th>
+                            <th scope="row">10</th>
+                            <th scope="row">0</th>
+                            <th scope="row">6</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Growth</b></th>
+                            <th scope="row">40</th>
+                            <th scope="row">15</th>
+                            <th scope="row">0</th>
+                            <th scope="row">0</th>
+                            <th scope="row">10</th>
+                            <th scope="row">0</th>
+                            <th scope="row">0</th>
+                            <th scope="row">0</th>
+                            <th scope="row">5</th>
+                            <th scope="row"></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

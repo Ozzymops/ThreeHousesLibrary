@@ -1,15 +1,145 @@
-﻿
-@{
-    Layout = null;
+﻿@{
+    ViewData["Title"] = "Wyvern Rider";
+    Layout = "_ClassLayout";
 }
 
-<!DOCTYPE html>
+<input type="hidden" id="group" value="3" />
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>WyvernRider</title>
-</head>
-<body>
-</body>
-</html>
+@* Content *@
+<div class="jumbotron-fluid">
+    <div class="container">
+        <div class="container">
+            <div class="container">
+                <h2>Wyvern Rider <img src="~/img/data/classes/wyvern-rider.png" title="Wyvern Rider" /></h2>
+                <p><i>An airborne knight with overall high stats but a weakness to bows and magic, this class can move again after taking certain actions.</i></p>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Recommended <a asp-controller="Home" asp-action="Characters">characters</a> for this class</h3>
+                <table class="table" style="text-align: center;">
+                    <tr>
+                        <th scope="col"><a asp-controller="Character" asp-action="Byleth"><img class="byleth" src="~/img/data/characters/byleth-m-ts.png" title="Byleth [M]" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Byleth"><img class="byleth" src="~/img/data/characters/byleth-f-ts.png" title="Byleth [F]" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Caspar"><img class="blackEagles" src="~/img/data/characters/caspar-ts.png" title="Caspar" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Petra"><img class="blackEagles" src="~/img/data/characters/petra-ts.png" title="Petra" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Jeritza"><img class="blackEagles" src="~/img/data/characters/jeritza-ts.png" title="Jeritza" /></a></th>
+                    </tr>
+                    <tr>
+                        <th scope="col"><a asp-controller="Character" asp-action="Ashe"><img class="blueLions" src="~/img/data/characters/ashe-ts.png" title="Ashe" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Ingrid"><img class="blueLions" src="~/img/data/characters/ingrid-ts.png" title="Ingrid" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Claude"><img class="goldenDeer" src="~/img/data/characters/claude-ts.png" title="Claude" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Hilda"><img class="goldenDeer" src="~/img/data/characters/hilda-ts.png" title="Hilda" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Cyril"><img class="churchOfSeiros" src="~/img/data/characters/cyril-ts.png" title="Cyril" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Seteth"><img class="churchOfSeiros" src="~/img/data/characters/seteth.png" title="Seteth" /></a></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Certificate Requirements</h3>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><img src="~/img/data/skills/axe.png" title="Axe" /></th>
+                            <th scope="col"><img src="~/img/data/skills/flying.png" title="flying" /></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>B</b></th>
+                            <th scope="row"><b>C</b></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <div class="row">
+                    <div class="col-sm">
+                        <h3>Class Proficiencies</h3>
+                        <table class="table" style="text-align: center;">
+                            <tr>
+                                <th scope="col"><img src="~/img/data/skills/lance.png" title="Lance" /></th>
+                                <th scope="col"><img src="~/img/data/skills/axe.png" title="Axe" /></th>
+                                <th scope="col"><img src="~/img/data/skills/flying.png" title="Flying" /></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm">
+                        <h3>Class Restrictions</h3>
+                        <table class="table" style="text-align: center;">
+                            <tr>
+                                <th scope="col"><img src="~/img/data/skills/lance.png" title="Lance" /></th>
+                                <th scope="col"><img src="~/img/data/skills/axe.png" title="Axe" /></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class <a asp-controller="Home" asp-action="Abilities">Abilities</a></h3>
+                <div class="row">
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/axefaire.png" title="Axefaire" style="width: 3vw;" /><b>Axefaire</b><br /><i>Grants ATK +5 when using an axe.</i></p>
+                    </div>
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/canto.png" title="Canto" style="width: 3vw;" /><b>Canto</b><br /><i>Allows unit to move again after completing certain actions, if there is MOV remaining.</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class Mastery</h3>
+                <div class="row">
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/seal-defense.png" title="Seal Defense" style="width: 3vw;" /><b>Seal Defense</b><br /><i>If unit damages foe during combat, foe suffers DEF -6 for 1 turn after combat.</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class Stats</h3>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><b>Stat</b></th>
+                            <th scope="col">HP</th>
+                            <th scope="col">STR</th>
+                            <th scope="col">MAG</th>
+                            <th scope="col">DEX</th>
+                            <th scope="col">SPD</th>
+                            <th scope="col">LCK</th>
+                            <th scope="col">DEF</th>
+                            <th scope="col">RES</th>
+                            <th scope="col">CHA</th>
+                            <th scope="col">MOV</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>Base</b></th>
+                            <th scope="row">30</th>
+                            <th scope="row">18</th>
+                            <th scope="row">8</th>
+                            <th scope="row">12</th>
+                            <th scope="row">14</th>
+                            <th scope="row">10</th>
+                            <th scope="row">12</th>
+                            <th scope="row">8</th>
+                            <th scope="row">0</th>
+                            <th scope="row">7</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Growth</b></th>
+                            <th scope="row">30</th>
+                            <th scope="row">10</th>
+                            <th scope="row">-5</th>
+                            <th scope="row">0</th>
+                            <th scope="row">0</th>
+                            <th scope="row">0</th>
+                            <th scope="row">5</th>
+                            <th scope="row">-5</th>
+                            <th scope="row">5</th>
+                            <th scope="row"></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

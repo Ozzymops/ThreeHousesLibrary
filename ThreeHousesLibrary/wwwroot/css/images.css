@@ -1,4 +1,13 @@
-﻿img.unaffiliated {
+﻿img.banner {
+    height: 6vh;
+    margin: 10px;
+}
+
+img.banner-large {
+    height: 20vh;
+}
+
+img.unaffiliated {
     background-color: gray;
     border-radius: 25px;
     height: 15vh;
@@ -11,13 +20,13 @@ img.byleth {
 }
 
 img.blackEagles {
-    background-color: crimson;
+    background-color: red;
     border-radius: 25px;
     height: 15vh;
 }
 
 img.blueLions {
-    background-color: navy;
+    background-color: darkslateblue;
     border-radius: 25px;
     height: 15vh;
 }
@@ -32,4 +41,20 @@ img.churchOfSeiros {
     background-color: silver;
     border-radius: 25px;
     height: 15vh;
+}
+
+img.lord {
+    border: 3px dashed white;
+}
+
+img.dlc {
+    border: 4px dotted fuchsia;
+}
+
+img.best {
+    border: 3px dashed goldenrod;
+}
+
+img.worst {
+    border: 3px dashed black;
 }

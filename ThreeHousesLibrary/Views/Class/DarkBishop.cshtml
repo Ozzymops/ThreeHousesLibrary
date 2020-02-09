@@ -1,15 +1,138 @@
-﻿
-@{
-    Layout = null;
+﻿@{
+    ViewData["Title"] = "Dark Bishop";
+    Layout = "_ClassLayout";
 }
 
-<!DOCTYPE html>
+<input type="hidden" id="group" value="3" />
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>DarkBishop</title>
-</head>
-<body>
-</body>
-</html>
+@* Content *@
+<div class="jumbotron-fluid">
+    <div class="container">
+        <div class="container">
+            <div class="container">
+                <h2>Dark Bishop <img src="~/img/data/classes/dark-bishop.png" title="Dark Bishop" /></h2>
+                <p><i>A dark-magic specialist, the Dark Bishop decimates enemies with high physical defense.</i></p>
+                <p><i>The Dark Bishop is gender-locked to male characters only.</i></p>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Recommended <a asp-controller="Home" asp-action="Characters">characters</a> for this class</h3>
+                <table class="table" style="text-align: center;">
+                    <tr>
+                        <th scope="col"><a asp-controller="Character" asp-action="Hubert"><img class="blackEagles" src="~/img/data/characters/hubert-ts.png" title="Hubert" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Linhardt"><img class="blackEagles" src="~/img/data/characters/linhardt-ts.png" title="Linhardt" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Lorenz"><img class="goldenDeer" src="~/img/data/characters/lorenz-ts.png" title="Lorenz" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Hanneman"><img class="churchOfSeiros" src="~/img/data/characters/hanneman.png" title="Hanneman" /></a></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Certificate Requirements</h3>
+                <p><i>Unit also needs a <a asp-controller="Class" asp-action="DarkMage">Dark Mage</a> certification.</i></p>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><img src="~/img/data/skills/reason.png" title="Reason" /></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>A</b></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <div class="row">
+                    <div class="col-sm">
+                        <h3>Class Proficiencies</h3>
+                        <table class="table" style="text-align: center;">
+                            <tr>
+                                <th scope="col"><img src="~/img/data/skills/reason.png" title="Reason" /></th>
+                                <th scope="col"><img src="~/img/data/skills/faith.png" title="Faith" /></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm">
+                        <h3>Class Restrictions</h3>
+                        <table class="table" style="text-align: center;">
+                            <tr>
+                                <th scope="col"><img src="~/img/data/skills/reason.png" title="Black / Dark Magic" /></th>
+                                <th scope="col"><img src="~/img/data/skills/faith.png" title="White Magic" /></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class <a asp-controller="Home" asp-action="Abilities">Abilities</a></h3>
+                <div class="row">
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/miasma-delta.png" title="Miasma Δ" style="width: 3vw;" /><b>Miasma Δ</b><br /><i>Allows unit to cast Miasma Δ. If Miasma Δ is already available, then unit can cast it twice as often.</i></p>
+                    </div>
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/fiendish-blow.png" title="Fiendish Blow" style="width: 3vw;" /><b>Fiendish Blow</b><br /><i>If unit initiates combat, grants MAG +6 during combat.</i></p>
+                    </div>
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/heartseeker.png" title="Heartseeker" style="width: 3vw;" /><b>Heartseeker</b><br /><i>Adjacent foes suffer AVO -20 during combat.</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class Mastery</h3>
+                <div class="row">
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/lifetaker.png" title="Lifetaker" style="width: 3vw;" /><b>Lifetaker</b><br /><i>Unit recovers HP equal to 50% of damage dealt after defeating a foe.</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class Stats</h3>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><b>Stat</b></th>
+                            <th scope="col">HP</th>
+                            <th scope="col">STR</th>
+                            <th scope="col">MAG</th>
+                            <th scope="col">DEX</th>
+                            <th scope="col">SPD</th>
+                            <th scope="col">LCK</th>
+                            <th scope="col">DEF</th>
+                            <th scope="col">RES</th>
+                            <th scope="col">CHA</th>
+                            <th scope="col">MOV</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>Base</b></th>
+                            <th scope="row">30</th>
+                            <th scope="row">8</th>
+                            <th scope="row">17</th>
+                            <th scope="row">12</th>
+                            <th scope="row">14</th>
+                            <th scope="row">10</th>
+                            <th scope="row">12</th>
+                            <th scope="row">15</th>
+                            <th scope="row">0</th>
+                            <th scope="row">4</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Growth</b></th>
+                            <th scope="row">10</th>
+                            <th scope="row">0</th>
+                            <th scope="row">10</th>
+                            <th scope="row">0</th>
+                            <th scope="row">0</th>
+                            <th scope="row">0</th>
+                            <th scope="row">-5</th>
+                            <th scope="row">5</th>
+                            <th scope="row">0</th>
+                            <th scope="row"></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

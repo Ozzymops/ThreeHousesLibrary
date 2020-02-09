@@ -1,15 +1,135 @@
-﻿
-@{
-    Layout = null;
+﻿@{
+    ViewData["Title"] = "Grappler";
+    Layout = "_ClassLayout";
 }
 
-<!DOCTYPE html>
+<input type="hidden" id="group" value="3" />
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Grappler</title>
-</head>
-<body>
-</body>
-</html>
+@* Content *@
+<div class="jumbotron-fluid">
+    <div class="container">
+        <div class="container">
+            <div class="container">
+                <h2>Grappler <img src="~/img/data/classes/grappler.png" title="Grappler" /></h2>
+                <p><i>A master of hand-to-hand combat, the Grappler mows down enemies with rapid blows.</i></p>
+                <p><i>The Grappler is gender-locked to male characters only.</i></p>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Recommended <a asp-controller="Home" asp-action="Characters">characters</a> for this class</h3>
+                <table class="table" style="text-align: center;">
+                    <tr>
+                        <th scope="col"><a asp-controller="Character" asp-action="Caspar"><img class="blackEagles" src="~/img/data/characters/caspar-ts.png" title="Caspar" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Dedue"><img class="blueLions" src="~/img/data/characters/dedue-ts.png" title="Dedue" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Felix"><img class="blueLions" src="~/img/data/characters/felix-ts.png" title="Felix" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Raphael"><img class="goldenDeer" src="~/img/data/characters/raphael-ts.png" title="Raphael" /></a></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Certificate Requirements</h3>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><img src="~/img/data/skills/brawl.png" title="Brawling" /></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>A</b></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <div class="row">
+                    <div class="col-sm">
+                        <h3>Class Proficiencies</h3>
+                        <table class="table" style="text-align: center;">
+                            <tr>
+                                <th scope="col"><img src="~/img/data/skills/brawl.png" title="Brawling" /></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm">
+                        <h3>Class Restrictions</h3>
+                        <table class="table" style="text-align: center;">
+                            <tr>
+                                <th scope="col"><img src="~/img/data/skills/brawl.png" title="Brawling" /></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class <a asp-controller="Home" asp-action="Abilities">Abilities</a></h3>
+                <div class="row">
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/fistfaire.png" title="Fistfaire" style="width: 3vw;" /><b>Fistfaire</b><br /><i>Grants ATK +5 when brawling.</i></p>
+                    </div>
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/unarmed-combat.png" title="Unarmed Combat" style="width: 3vw;" /><b>Unarmed Combat</b><br /><i>Allows unit to fight without a weapon.</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class Mastery</h3>
+                <div class="row">
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/tomebreaker.png" title="Tomebreaker" style="width: 3vw;" /><b>Tomebreaker</b><br /><i>Grants HIT/AVO +20 when brawling against magic users.</i></p>
+                    </div>
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/ca_brawl.png" title="Fierce Iron Fist" style="width: 3vw;" /><b>Fierce Iron Fist</b><br /><i>An attack that strikes 3 times. Exclusive to the Grappler class.</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class Stats</h3>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><b>Stat</b></th>
+                            <th scope="col">HP</th>
+                            <th scope="col">STR</th>
+                            <th scope="col">MAG</th>
+                            <th scope="col">DEX</th>
+                            <th scope="col">SPD</th>
+                            <th scope="col">LCK</th>
+                            <th scope="col">DEF</th>
+                            <th scope="col">RES</th>
+                            <th scope="col">CHA</th>
+                            <th scope="col">MOV</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>Base</b></th>
+                            <th scope="row">32</th>
+                            <th scope="row">17</th>
+                            <th scope="row">8</th>
+                            <th scope="row">12</th>
+                            <th scope="row">14</th>
+                            <th scope="row">10</th>
+                            <th scope="row">14</th>
+                            <th scope="row">7</th>
+                            <th scope="row">0</th>
+                            <th scope="row">6</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Growth</b></th>
+                            <th scope="row">40</th>
+                            <th scope="row">10</th>
+                            <th scope="row">0</th>
+                            <th scope="row">10</th>
+                            <th scope="row">10</th>
+                            <th scope="row">0</th>
+                            <th scope="row">0</th>
+                            <th scope="row">0</th>
+                            <th scope="row">5</th>
+                            <th scope="row"></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
