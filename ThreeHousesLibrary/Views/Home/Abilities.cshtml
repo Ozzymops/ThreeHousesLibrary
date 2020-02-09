@@ -1,15 +1,89 @@
-﻿
-@{
-    Layout = null;
+﻿@{
+    ViewData["Title"] = "Abilities";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Abilities</title>
-</head>
-<body>
-</body>
-</html>
+@* Content *@
+<div class="jumbotron-fluid">
+    <div class="container" style="text-align: center;">
+        @* Personal Abilities *@
+        <h2>Personal Abilities</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <a asp-controller="Character" asp-action="Byleth"><img class="byleth" src="~/img/data/characters/byleth-mf.png" title="Byleth" /><br />Byleth Eisner</a>
+                </div>
+                <div class="col-sm">
+                    <div class="row">
+                        <div class="col-sm-2" style="margin-right: -1.5vw;">
+                            <img class="ability" src="~/img/data/abilities/professors-guidance.png" title="Professor's Guidance" />
+                        </div>
+                        <div class="col-sm" style="text-align: left; margin-top: 3vh;">
+                            <p><b>Professor's Guidance:</b> <i>Multiplies this unit's and adjacent allies' experience earned by 1.2.</i></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2" style="margin-right: -1.5vw;">
+                            <img class="ability" src="~/img/data/abilities/professors-guidance-plus.png" title="Professor's Guidance+" />
+                        </div>
+                        <div class="col-sm" style="text-align: left; margin-top: 3vh;">
+                            <p><b>Professor's Guidance+:</b> <i>Unit deals 2 extra damage during combat. Multiplies this unit's and adjacent allies' experience earned by 1.2.</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-sm-2">
+                    <a asp-controller="Character" asp-action="Jeralt"><img class="unaffiliated" src="~/img/data/characters/jeralt.png" title="Jeralt" /><br />Jeralt Eisner</a>
+                </div>
+                <div class="col-sm" style="margin-top: 3vh;">
+                    <div class="row">
+                        <div class="col-sm-2" style="margin-right: -1.5vw;">
+                            <img class="ability" src="~/img/data/abilities/blade-breaker.png" title="Blade Breaker" />
+                        </div>
+                        <div class="col-sm" style="text-align: left; margin-top: 3vh;">
+                            <p><b>Blade Breaker:</b> <i>If unit damages foe, foe suffers STR/DEF -6 for 1 turn after combat.</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-sm-2">
+                    <a asp-controller="Character" asp-action="Anna"><img class="unaffiliated" src="~/img/data/characters/anna.png" title="Anna" /><br />Anna</a>
+                </div>
+                <div class="col-sm" style="margin-top: 3vh;">
+                    <div class="row">
+                        <div class="col-sm-2" style="margin-right: -1.5vw;">
+                            <img class="ability" src="~/img/data/abilities/pomp-and-circumstance.png" title="Business Prosperity" />
+                        </div>
+                        <div class="col-sm" style="text-align: left; margin-top: 3vh;">
+                            <p><b>Business Prosperity:</b> <i>Grants LCK +5.</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-sm-2">
+                    <a asp-controller="Character" asp-action="Edelgard"><img class="blackEagles lord" src="~/img/data/characters/edelgard-mixed.png" title="Edelgard" /><br />Edelgard</a>
+                </div>
+                <div class="col-sm">
+                    <div class="row">
+                        <div class="col-sm-2" style="margin-right: -1.5vw;">
+                            <img class="ability" src="~/img/data/abilities/imperial-lineage.png" title="Imperial Lineage" />
+                        </div>
+                        <div class="col-sm" style="text-align: left; margin-top: 3vh;">
+                            <p><b>Imperial Lineage:</b> <i>Multiplies this unit's experience earned by 1.2.</i></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2" style="margin-right: -1.5vw;">
+                            <img class="ability" src="~/img/data/abilities/imperial-lineage-plus.png" title="Imperial Lineage+" />
+                        </div>
+                        <div class="col-sm" style="text-align: left; margin-top: 3vh;">
+                            <p><b>Imperial Lineage+:</b> <i>If unit takes no action except Wait, grants RES +4 for 1 turn. Multiplies this unit's experience earned by 1.2.</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>           
+    </div>
+</div>
