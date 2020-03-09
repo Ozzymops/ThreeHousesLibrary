@@ -208,5 +208,26 @@ namespace ThreeHousesLibrary.Controllers
             return View();
         }
         #endregion
+        #region Ashen Wolves
+        public IActionResult Yuri()
+        {
+            return View();
+        }
+
+        public IActionResult Balthus()
+        {
+            return View();
+        }
+
+        public IActionResult Hapi()
+        {
+            return View();
+        }
+
+        public IActionResult Constance()
+        {
+            return View();
+        }
+        #endregion
     }
 }

@@ -1,0 +1,183 @@
+﻿@{
+    ViewData["Title"] = "War Monk/Cleric";
+    Layout = "_ClassLayout";
+}
+
+<input type="hidden" id="group" value="5" />
+
+@* Content *@
+<div class="jumbotron-fluid">
+    <div class="container">
+        <div class="container">
+            <div class="container">
+                <h2>War Monk/Cleric <img src="~/img/data/classes/war-monk.png" title="War Monk/Cleric" /></h2>
+                <p><i>This powerful warrior wields axes or fists while upholding devout faith. This unit can also use some magic.</i></p>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Recommended <a asp-controller="Home" asp-action="Characters">characters</a> for this class</h3>
+                <table class="table" style="text-align: center;">
+                    <tr>
+                        <th scope="col"><a asp-controller="Character" asp-action="Byleth"><img class="byleth" src="~/img/data/characters/byleth-mf-ts.png" title="Byleth" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Ferdinand"><img class="blackEagles" src="~/img/data/characters/ferdinand-ts.png" title="Ferdinand" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Dorothea"><img class="blackEagles" src="~/img/data/characters/dorothea-ts.png" title="Dorothea" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Caspar"><img class="blackEagles" src="~/img/data/characters/caspar-ts.png" title="Caspar" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Dimitri"><img class="blueLions" src="~/img/data/characters/dimitri-ts-eyepatch.png" title="Dimitri" /></a></th>
+                    </tr>
+                    <tr>
+                        <th scope="col"><a asp-controller="Character" asp-action="Dedue"><img class="blueLions" src="~/img/data/characters/dedue-ts.png" title="Dedue" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Felix"><img class="blueLions" src="~/img/data/characters/felix-ts.png" title="Felix" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Annette"><img class="blueLions" src="~/img/data/characters/annette-ts.png" title="Annette" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Ashe"><img class="blueLions" src="~/img/data/characters/ashe-ts.png" title="Ashe" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Sylvain"><img class="blueLions" src="~/img/data/characters/sylvain-ts.png" title="Sylvain" /></a></th>
+                    </tr>
+                    <tr>
+                        <th scope="col"><a asp-controller="Character" asp-action="Ingrid"><img class="blueLions" src="~/img/data/characters/ingrid-ts.png" title="Ingrid" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Gilbert"><img class="blueLions" src="~/img/data/characters/gilbert.png" title="Gilbert" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Raphael"><img class="goldenDeer" src="~/img/data/characters/raphael-ts.png" title="Raphael" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Ignatz"><img class="goldenDeer" src="~/img/data/characters/ignatz-ts.png" title="Ignatz" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Leonie"><img class="goldenDeer" src="~/img/data/characters/leonie-ts.png" title="Leonie" /></a></th>
+                    </tr>
+                    <tr>
+                        <th scope="col"><a asp-controller="Character" asp-action="Yuri"><img class="ashenWolves" src="~/img/data/characters/yuri.png" title="Yuri" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Constance"><img class="ashenWolves" src="~/img/data/characters/constance.png" title="Constance" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Balthus"><img class="ashenWolves" src="~/img/data/characters/balthus.png" title="Balthus" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Hapi"><img class="ashenWolves" src="~/img/data/characters/hapi.png" title="Hapi" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Alois"><img class="churchOfSeiros" src="~/img/data/characters/alois.png" title="Alois" /></a></th>
+                    </tr>
+                    <tr>
+                        <th scope="col"><a asp-controller="Character" asp-action="Catherine"><img class="churchOfSeiros" src="~/img/data/characters/catherine.png" title="Catherine" /></a></th>
+                        <th scope="col"><a asp-controller="Character" asp-action="Anna"><img class="unaffiliated" src="~/img/data/characters/anna.png" title="Anna" /></a></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Certificate Requirements</h3>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><img src="~/img/data/skills/brawl.png" title="Brawling" /></th>
+                            <th scope="col"><img src="~/img/data/skills/faith.png" title="Faith" /></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>B+</b></th>
+                            <th scope="row"><b>C+</b></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <div class="row">
+                    <div class="col-sm">
+                        <h3>Class Proficiencies</h3>
+                        <table class="table" style="text-align: center;">
+                            <tr>
+                                <th scope="col"><img src="~/img/data/skills/axe.png" title="Axe" />+1</th>
+                                <th scope="col"><img src="~/img/data/skills/brawl.png" title="Brawling" />+3</th>
+                                <th scope="col"><img src="~/img/data/skills/faith.png" title="Faith" />+1</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm">
+                        <h3>Class Restrictions</h3>
+                        <table class="table" style="text-align: center;">
+                            <tr>
+                                <th scope="col"><img src="~/img/data/skills/axe.png" title="Axe" /></th>
+                                <th scope="col"><img src="~/img/data/skills/brawl.png" title="Brawling" /></th>
+                                <th scope="col"><img src="~/img/data/skills/reason.png" title="Black / Dark Magic" /></th>
+                                <th scope="col"><img src="~/img/data/skills/faith.png" title="White Magic" /></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class <a asp-controller="Home" asp-action="Abilities">Abilities</a></h3>
+                <div class="row">
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/fistfaire.png" title="Fistfaire" style="width: 3vw;" /><b>Fistfaire</b><br /><i>Grants ATK +5 when brawling.</i></p>
+                    </div>
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/unarmed-combat.png" title="Unarmed Combat" style="width: 3vw;" /><b>Unarmed Combat</b><br /><i>Allows unit to fight without a weapon.</i></p>
+                    </div>
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/heal.png" title="Heal" style="width: 3vw;" /><b>Heal</b><br /><i>Allows unit to cast Heal. If Heal is already available, then unit can cast it twice as often.</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class Mastery</h3>
+                <div class="row">
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/brawl-avoid.png" title="Brawl Avoid +20" style="width: 3vw;" /><b>Brawl Avoid +20</b><br /><i>Grants AVO +20 when brawling.</i></p>
+                    </div>
+                    <div class="col-sm">
+                        <p><img src="~/img/data/abilities/ca_brawl.png" title="Pneuma Gale" style="width: 3vw;" /><b>Pneuma Gale</b><br /><i>Magic attack. Can attack from long range. Exclusive to the War Monk/Cleric class.</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 20px;">
+                <h3>Class Stats</h3>
+                <table class="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col"><b>Stat</b></th>
+                            <th scope="col">HP</th>
+                            <th scope="col">STR</th>
+                            <th scope="col">MAG</th>
+                            <th scope="col">DEX</th>
+                            <th scope="col">SPD</th>
+                            <th scope="col">LCK</th>
+                            <th scope="col">DEF</th>
+                            <th scope="col">RES</th>
+                            <th scope="col">CHA</th>
+                            <th scope="col">MOV</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><b>Base</b></th>
+                            <th scope="row">32</th>
+                            <th scope="row">17</th>
+                            <th scope="row">10</th>
+                            <th scope="row">10</th>
+                            <th scope="row">10</th>
+                            <th scope="row">10</th>
+                            <th scope="row">14</th>
+                            <th scope="row">11</th>
+                            <th scope="row">0</th>
+                            <th scope="row">6</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Boost</b></th>
+                            <th scope="row">3</th>
+                            <th scope="row">2</th>
+                            <th scope="row">0</th>
+                            <th scope="row">1</th>
+                            <th scope="row">0</th>
+                            <th scope="row">0</th>
+                            <th scope="row">1</th>
+                            <th scope="row">1</th>
+                            <th scope="row">0</th>
+                            <th scope="row">2</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><b>Growth</b></th>
+                            <th scope="row">40</th>
+                            <th scope="row">10</th>
+                            <th scope="row">5</th>
+                            <th scope="row">10</th>
+                            <th scope="row">0</th>
+                            <th scope="row">0</th>
+                            <th scope="row">0</th>
+                            <th scope="row">5</th>
+                            <th scope="row">5</th>
+                            <th scope="row"></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

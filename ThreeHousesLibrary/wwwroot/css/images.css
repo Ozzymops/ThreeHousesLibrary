@@ -7,14 +7,33 @@ img.banner-large {
     height: 20vh;
 }
 
+img.character-single {
+    height: 40vh;
+    text-align: center;
+    border-radius: 25px;
+}
+
+img.character-double {
+    height: 25vh;
+    text-align: center;
+    border-radius: 25px;
+}
+
+img.character-quadruple {
+    height: 20vh;
+    text-align: center;
+    border-radius: 25px;
+}
+
 img.unaffiliated {
-    background-color: gray;
+    background-color: white;
     border-radius: 25px;
     height: 15vh;
 }
 
 img.byleth {
-    background-color: darkgreen;
+    background-image: url(../img/data/byleth-back.png);
+    background-size: cover;
     border-radius: 25px;
     height: 15vh;
 }
@@ -43,6 +62,26 @@ img.churchOfSeiros {
     height: 15vh;
 }
 
+img.blackChurch {
+    background-color: red;
+    background-image: -webkit-linear-gradient(0deg, silver 50%, red 50%);
+    border-radius: 25px;
+    height: 15vh;
+}
+
+img.blueChurch {
+    background-color: darkslateblue;
+    background-image: -webkit-linear-gradient(0deg, silver 50%, darkslateblue 50%);
+    border-radius: 25px;
+    height: 15vh;
+}
+
+img.ashenWolves {
+    background-color: #262626;
+    border-radius: 25px;
+    height: 15vh;
+}
+
 img.lord {
     border: 3px dashed white;
 }
@@ -60,8 +99,43 @@ img.worst {
 }
 
 img.ability {
-    height: 7vh;
+    height: 5vh;
     margin: 10px;
     text-align: left;
     vertical-align: middle;
+}
+
+img.skill {
+    height: 4vh;
+    margin: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+img.crest {
+    height: 6vh;
+    margin: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+img.mastery {
+    border: 4px dashed gold;
+}
+
+img.class {
+    height: 15vh;
+    margin: 10px;
+    text-align: left;
+    vertical-align: middle;
+    background-color: gray;
+    border-radius: 25px;
+}
+
+img.class-small {
+    height: 6vh;
+    margin: 10px;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 25px;
 }

@@ -254,5 +254,25 @@ namespace ThreeHousesLibrary.Controllers
             return View();
         }
 
+        // Special
+        public IActionResult Trickster()
+        {
+            return View();
+        }
+
+        public IActionResult WarMonk()
+        {
+            return View();
+        }
+
+        public IActionResult DarkFlier()
+        {
+            return View();
+        }
+
+        public IActionResult Valkyrie()
+        {
+            return View();
+        }
     }
 }

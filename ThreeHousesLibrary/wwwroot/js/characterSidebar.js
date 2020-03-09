@@ -22,3 +22,8 @@ if (document.getElementById('group').value == 3) {
 if (document.getElementById('group').value == 4) {
     $("#churchOfSeiros").addClass("show");
 }
+
+// AW
+if (document.getElementById('group').value == 5) {
+    $("#ashenWolves").addClass("show");
+}

@@ -22,3 +22,8 @@ if (document.getElementById('group').value == 3) {
 if (document.getElementById('group').value == 4) {
     $("#master").addClass("show");
 }
+
+// Special
+if (document.getElementById('group').value == 5) {
+    $("#special").addClass("show");
+}

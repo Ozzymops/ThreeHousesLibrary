@@ -1,89 +1,373 @@
 ﻿@{
     ViewData["Title"] = "Abilities";
+    Layout = "_AbilityLayout";
 }
 
 @* Content *@
 <div class="jumbotron-fluid">
-    <div class="container" style="text-align: center;">
-        @* Personal Abilities *@
-        <h2>Personal Abilities</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2">
-                    <a asp-controller="Character" asp-action="Byleth"><img class="byleth" src="~/img/data/characters/byleth-mf.png" title="Byleth" /><br />Byleth Eisner</a>
-                </div>
-                <div class="col-sm">
-                    <div class="row">
-                        <div class="col-sm-2" style="margin-right: -1.5vw;">
-                            <img class="ability" src="~/img/data/abilities/professors-guidance.png" title="Professor's Guidance" />
-                        </div>
-                        <div class="col-sm" style="text-align: left; margin-top: 3vh;">
-                            <p><b>Professor's Guidance:</b> <i>Multiplies this unit's and adjacent allies' experience earned by 1.2.</i></p>
-                        </div>
+    <div class="container-fluid">
+        <div class="container-fluid" style="width: 75vw;">
+            @* Personal Abilities *@
+            <h2 style="text-align: center;">Personal Abilities</h2>
+            @* Unaffiliated *@
+            <h3 id="unaffiliated" style="text-align: center;">Unaffiliated</h3>
+            <div class="container-fluid" style="margin-top: 20px;">
+                @* Byleth & Jeralt *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Byleth"><img class="byleth lord" src="~/img/data/characters/byleth-mf-mixed.png" title="Byleth" /><br />Byleth Eisner</a></p>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-2" style="margin-right: -1.5vw;">
-                            <img class="ability" src="~/img/data/abilities/professors-guidance-plus.png" title="Professor's Guidance+" />
-                        </div>
-                        <div class="col-sm" style="text-align: left; margin-top: 3vh;">
-                            <p><b>Professor's Guidance+:</b> <i>Unit deals 2 extra damage during combat. Multiplies this unit's and adjacent allies' experience earned by 1.2.</i></p>
-                        </div>
+                    <div class="col-sm-4">
+                        <p><img class="ability" src="~/img/data/abilities/professors-guidance.png" title="Professor's Guidance" /><b>Professor's Guidance</b><br /><i>Multiplies this unit’s and adjacent allies’ experience earned by 1.2.</i></p>
+                        <p><img class="ability" src="~/img/data/abilities/professors-guidance-plus.png" title="Professor's Guidance+" /><b>Professor's Guidance+</b><br /><i>Unit deals 2 extra damage during combat. Multiplies this unit’s and adjacent allies’ experience earned by 1.2.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Jeralt"><img class="unaffiliated" src="~/img/data/characters/jeralt.png" title="Jeralt" /><br />Jeralt Eisner</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/blade-breaker.png" title="Blade Breaker" /><b>Blade Breaker</b><br /><i>If unit damages foe, foe suffers STR/DEF -6 for 1 turn after combat.</i></p>
                     </div>
                 </div>
-            </div>
-            <div class="row" style="margin-top: 20px;">
-                <div class="col-sm-2">
-                    <a asp-controller="Character" asp-action="Jeralt"><img class="unaffiliated" src="~/img/data/characters/jeralt.png" title="Jeralt" /><br />Jeralt Eisner</a>
-                </div>
-                <div class="col-sm" style="margin-top: 3vh;">
-                    <div class="row">
-                        <div class="col-sm-2" style="margin-right: -1.5vw;">
-                            <img class="ability" src="~/img/data/abilities/blade-breaker.png" title="Blade Breaker" />
-                        </div>
-                        <div class="col-sm" style="text-align: left; margin-top: 3vh;">
-                            <p><b>Blade Breaker:</b> <i>If unit damages foe, foe suffers STR/DEF -6 for 1 turn after combat.</i></p>
-                        </div>
+                @* Anna *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Anna"><img class="unaffiliated" src="~/img/data/characters/anna.png" title="Anna" /><br />Anna</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/pomp-and-circumstance.png" title="Business Prosperity" /><b>Business Prosperity</b><br /><i>Grants LCK +5.</i></p>
                     </div>
                 </div>
             </div>
-            <div class="row" style="margin-top: 20px;">
-                <div class="col-sm-2">
-                    <a asp-controller="Character" asp-action="Anna"><img class="unaffiliated" src="~/img/data/characters/anna.png" title="Anna" /><br />Anna</a>
+            <hr />
+            @* Black Eagles *@
+            <h3 id="blackEagles" style="text-align: center;">Black Eagles</h3>
+            <div class="container-fluid" style="margin-top: 20px;">
+                @* Edelgard & Hubert *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Edelgard"><img class="blackEagles lord" src="~/img/data/characters/edelgard-mixed.png" title="Edelgard" /><br />Edelgard von Hresvelg</a></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p><img class="ability" src="~/img/data/abilities/imperial-lineage.png" title="Imperial Lineage" /><b>Imperial Lineage</b><br /><i>Multiplies this unit's experience earned by 1.2.</i></p>
+                        <p><img class="ability" src="~/img/data/abilities/imperial-lineage-plus.png" title="Imperial Lineage+" /><b>Imperial Lineage+</b><br /><i>If unit takes no action except Wait, grants RES +4 for 1 turn. Multiplies this unit's experience earned by 1.2.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Hubert"><img class="blackEagles" src="~/img/data/characters/hubert-mixed.png" title="Hubert" /><br />Hubert von Vestra</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/officer-duty.png" title="Officer Duty" /><b>Officer Duty</b><br /><i>Grants MT +5 with Gambits.</i></p>
+                    </div>
                 </div>
-                <div class="col-sm" style="margin-top: 3vh;">
-                    <div class="row">
-                        <div class="col-sm-2" style="margin-right: -1.5vw;">
-                            <img class="ability" src="~/img/data/abilities/pomp-and-circumstance.png" title="Business Prosperity" />
-                        </div>
-                        <div class="col-sm" style="text-align: left; margin-top: 3vh;">
-                            <p><b>Business Prosperity:</b> <i>Grants LCK +5.</i></p>
-                        </div>
+                @* Dorothea & Ferdinand *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Dorothea"><img class="blackEagles" src="~/img/data/characters/dorothea-mixed.png" title="Dorothea" /><br />Dorothea Arnault</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/songstress.png" title="Songstress" /><b>Songstress</b><br /><i>Adjacent allies recover up to 10% of their max HP at the start of each turn.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Ferdinand"><img class="blackEagles" src="~/img/data/characters/ferdinand-mixed.png" title="Ferdinand" /><br />Ferdinand von Aegir</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/confidence.png" title="Confidence" /><b>Confidence</b><br /><i>Grants HIT & AVO +15 when unit is at full HP.</i></p>
+                    </div>
+                </div>
+                @* Bernadetta & Caspar *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Bernadetta"><img class="blackEagles" src="~/img/data/characters/bernadetta-mixed.png" title="Bernadetta" /><br />Bernadetta von Varley</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/persecution-complex.png" title="Persecution Complex" /><b>Persecution Complex</b><br /><i>Grants ATK +5 when unit is not at full HP.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Caspar"><img class="blackEagles" src="~/img/data/characters/caspar-mixed.png" title="Caspar" /><br />Caspar von Bergliez</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/born-fighter.png" title="Born Fighter" /><b>Born Fighter</b><br /><i>Adjacent foes suffer AVO -10 during combat.</i></p>
+                    </div>
+                </div>
+                @* Petra & Linhardt *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Petra"><img class="blackEagles" src="~/img/data/characters/petra-mixed.png" title="Petra" /><br />Petra Macneary</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/hunters-boon.png" title="Hunter's Boon" /><b>Hunter's Boon</b><br /><i>Grants CRIT +20 when foe's HP is less or equal to 50%.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Linhardt"><img class="blackEagles" src="~/img/data/characters/linhardt-mixed.png" title="Linhardt" /><br />Linhardt von Hevring</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/catnap.png" title="Catnap" /><b>Catnap</b><br /><i>If unit takes no action except Wait, recovers up to 10% of max HP.</i></p>
+                    </div>
+                </div>
+                @* Jeritza *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Jeritza"><img class="blackChurch" src="~/img/data/characters/jeritza-mixed.png" title="Jeritza" /><br />Jeritza von Hrym</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/murderous-intent.png" title="Murderous Intent" /><b>Murderous Intent</b><br /><i>If unit initiates combat, grants HIT +20 during combat.</i></p>
                     </div>
                 </div>
             </div>
-            <div class="row" style="margin-top: 20px;">
-                <div class="col-sm-2">
-                    <a asp-controller="Character" asp-action="Edelgard"><img class="blackEagles lord" src="~/img/data/characters/edelgard-mixed.png" title="Edelgard" /><br />Edelgard</a>
-                </div>
-                <div class="col-sm">
-                    <div class="row">
-                        <div class="col-sm-2" style="margin-right: -1.5vw;">
-                            <img class="ability" src="~/img/data/abilities/imperial-lineage.png" title="Imperial Lineage" />
-                        </div>
-                        <div class="col-sm" style="text-align: left; margin-top: 3vh;">
-                            <p><b>Imperial Lineage:</b> <i>Multiplies this unit's experience earned by 1.2.</i></p>
-                        </div>
+            <hr />
+            @* Blue Lions *@
+            <h3 id="blueLions" style="text-align: center;">Blue Lions</h3>
+            <div class="container-fluid" style="margin-top: 20px;">
+                @* Dimitri & Dedue *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Dimitri"><img class="blueLions lord" src="~/img/data/characters/dimitri-mixed.png" title="Dimitri" /><br />Dimitri Alexandre Blaiddyd</a></p>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-2" style="margin-right: -1.5vw;">
-                            <img class="ability" src="~/img/data/abilities/imperial-lineage-plus.png" title="Imperial Lineage+" />
-                        </div>
-                        <div class="col-sm" style="text-align: left; margin-top: 3vh;">
-                            <p><b>Imperial Lineage+:</b> <i>If unit takes no action except Wait, grants RES +4 for 1 turn. Multiplies this unit's experience earned by 1.2.</i></p>
-                        </div>
+                    <div class="col-sm-4">
+                        <p><img class="ability" src="~/img/data/abilities/royal-lineage.png" title="Royal Lineage" /><b>Royal Lineage</b><br /><i>Multiplies this unit's experience earned by 1.2.</i></p>
+                        <p><img class="ability" src="~/img/data/abilities/royal-lineage-plus.png" title="Royal Lineage+" /><b>Royal Lineage+</b><br /><i>Grants AVO +20 while unit is at full HP. Multiplies this unit's experience earned by 1.2.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Dedue"><img class="blueLions" src="~/img/data/characters/dedue-mixed.png" title="Dedue" /><br />Dedue Molinaro</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/staunch-shield.png" title="Staunch Shield" /><b>Staunch Shield</b><br /><i>If unit takes no action except Wait, grants DEF +4 for 1 turn.</i></p>
+                    </div>
+                </div>
+                @* Felix & Mercedes *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Felix"><img class="blueLions" src="~/img/data/characters/felix-mixed.png" title="Felix" /><br />Felix Hugo Fraldarius</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/lone-wolf.png" title="Lone Wolf" /><b>Lone Wolf</b><br /><i>Unit deals 5 extra damage when no battalion is assigned or when battalion endurance is 0.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Mercedes"><img class="blueLions" src="~/img/data/characters/mercedes-mixed.png" title="Mercedes" /><br />Mercedes von Martritz</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/live-to-serve.png" title="Live to Serve" /><b>Live to Serve</b><br /><i>When healing an ally with white magic, unit recovers the same amount of HP.</i></p>
+                    </div>
+                </div>
+                @* Ashe & Annette *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Ashe"><img class="blueLions" src="~/img/data/characters/ashe-mixed.png" title="Ashe" /><br />Ashe Ubert</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/lockpick.png" title="Lockpick" /><b>Lockpick</b><br /><i>Allows unit to open doors and chests without keys.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Annette"><img class="blueLions" src="~/img/data/characters/annette-mixed.png" title="Annette" /><br />Annette Fantine Dominic</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/rally-strength.png" title="Perserverance" /><b>Perserverance</b><br /><i>Use Rally to grant STR +4 to an ally.</i></p>
+                    </div>
+                </div>
+                @* Sylvain & Ingrid *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Sylvain"><img class="blueLions" src="~/img/data/characters/sylvain-mixed.png" title="Sylvain" /><br />Sylvain Jose Gautier</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/philanderer.png" title="Philanderer" /><b>Philanderer</b><br /><i>If a female ally is adjacent, unit deals 2 extra damage and takes 2 less damage during combat.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Ingrid"><img class="blueLions" src="~/img/data/characters/ingrid-mixed.png" title="Ingrid" /><br />Ingrid Brandl Galatea</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/lady-knight.png" title="Lady Knight" /><b>Lady Knight</b><br /><i>Grants MT +3 and HIT +5 with Gambits.</i></p>
+                    </div>
+                </div>
+                @* Gilbert *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Gilbert"><img class="blueChurch" src="~/img/data/characters/gilbert.png" title="Gilbert" /><br />Gilbert Pronislav</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/veteran-knight.png" title="Veteran Knight" /><b>Veteran Knight</b><br /><i>Unit takes 2 less damage while in formation with a battalion.</i></p>
                     </div>
                 </div>
             </div>
-        </div>           
+            <hr />
+            @* Golden Deer *@
+            <h3 id="goldenDeer" style="text-align: center;">Golden Deer</h3>
+            <div class="container-fluid" style="margin-top: 20px;">
+                @* Claude & Lorenz *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Claude"><img class="goldenDeer lord" src="~/img/data/characters/claude-mixed.png" title="Claude" /><br />Claude von Riegan</a></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p><img class="ability" src="~/img/data/abilities/leicester-lineage.png" title="Leicester Lineage" /><b>Leicester Lineage</b><br /><i>Multiplies this unit's experience earned by 1.2.</i></p>
+                        <p><img class="ability" src="~/img/data/abilities/leicester-lineage-plus.png" title="Leicester Lineage+" /><b>Leicester Lineage+</b><br /><i>Allows unit to pass through spaces occupied by foes. Multiplies this unit's experience earned by 1.2.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Lorenz"><img class="goldenDeer" src="~/img/data/characters/lorenz-mixed.png" title="Lorenz" /><br />Lorenz Hellman Gloucester</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/distinguished-house.png" title="Distinguished House" /><b>Distinguished House</b><br /><i>Unit deals 2 extra damage while in formation with a battalion.</i></p>
+                    </div>
+                </div>
+                @* Hilda & Raphael *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Hilda"><img class="goldenDeer" src="~/img/data/characters/hilda-mixed.png" title="Hilda" /><br />Hilda Valentine Goneril</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/advocate.png" title="Advocate" /><b>Advocate</b><br /><i>Adjacent male allies deal 3 extra damage during combat.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Raphael"><img class="goldenDeer" src="~/img/data/characters/raphael-mixed.png" title="Raphael" /><br />Raphael Kirsten</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/goody-basket.png" title="Goody Basket" /><b>Goody Basket</b><br /><i>Chance to recover 10% of max HP at the start of each turn. Trigger % = LCK stat.</i></p>
+                    </div>
+                </div>
+                @* Lysithea & Ignatz *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Lysithea"><img class="goldenDeer" src="~/img/data/characters/lysithea-mixed.png" title="Lysithea" /><br />Lysithea von Ordelia</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/mastermind.png" title="Mastermind" /><b>Mastermind</b><br /><i>Doubles skill experience earned in battle.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Ignatz"><img class="goldenDeer" src="~/img/data/characters/ignatz-mixed.png" title="Ignatz" /><br />Ignatz Victor</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/watchful-eye.png" title="Watchful Eye" /><b>Watchful Eye</b><br /><i>Grants HIT +20.</i></p>
+                    </div>
+                </div>
+                @* Marianne & Leonie *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Marianne"><img class="goldenDeer" src="~/img/data/characters/marianne-mixed.png" title="Marianne" /><br />Marianne von Edmund</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/animal-friend.png" title="Animal Friend" /><b>Animal Friend</b><br /><i>Unit recovers up to 20% of max HP at the start of each turn when adjacent to a cavalry or flying ally.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Leonie"><img class="goldenDeer" src="~/img/data/characters/leonie-mixed.png" title="Leonie" /><br />Leonie Pinelli</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/rivalry.png" title="Rivalry" /><b>Rivalry</b><br /><i>If a male ally is adjacent, unit deals 2 extra damage and takes 2 less damage during combat.</i></p>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            @* Church of Seiros *@
+            <h3 id="churchOfSeiros" style="text-align: center;">Church of Seiros</h3>
+            <div class="container-fluid" style="margin-top: 20px;">
+                @* Rhea & Manuela *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Rhea"><img class="churchOfSeiros" src="~/img/data/characters/rhea.png" title="Rhea" /><br />Rhea</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/sacred-power.png" title="Sacred Power" /><b>Sacred Power</b><br /><i>Adjacent allies deal 3 extra damage and take 3 less damage during combat.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Manuela"><img class="churchOfSeiros" src="~/img/data/characters/manuela.png" title="Manuela" /><br />Manuela Cassagranda</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/infirmary-master.png" title="Infirmary Master" /><b>Infirmary Master</b><br /><i>Adjacent allies gain CRIT AVO +10 during combat.</i></p>
+                    </div>
+                </div>
+                @* Hanneman & Seteth *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Hanneman"><img class="churchOfSeiros" src="~/img/data/characters/hanneman.png" title="Hanneman" /><br />Hanneman von Essar</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/rally-magic.png" title="Crest Scholar" /><b>Crest Scholar</b><br /><i>Use Rally to grant MAG +4 to an ally.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Seteth"><img class="churchOfSeiros" src="~/img/data/characters/seteth.png" title="Seteth" /><br />Seteth</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/guardian.png" title="Guardian" /><b>Guardian</b><br /><i>Adjacent female allies deal 3 extra damage during combat.</i></p>
+                    </div>
+                </div>
+                @* Flayn & Cyril *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Flayn"><img class="churchOfSeiros" src="~/img/data/characters/flayn.png" title="Flayn" /><br />Flayn</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/lilys-poise.png" title="Lily's Poise" /><b>Lily's Poise</b><br /><i>Adjacent allies take 3 less damage during combat.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Cyril"><img class="churchOfSeiros" src="~/img/data/characters/cyril.png" title="Cyril" /><br />Cyril</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/aptitude.png" title="Aptitude" /><b>Aptitude</b><br /><i>Makes each stat 20% more likely to increase on level up.</i></p>
+                    </div>
+                </div>
+                @* Catherine & Alois *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Catherine"><img class="churchOfSeiros" src="~/img/data/characters/catherine.png" title="Catherine" /><br />Cassandra Rubens Charon</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/fighting-spirit.png" title="Fighting Spirit" /><b>Fighting Spirit</b><br /><i>Unit takes 5 less damage when no battalion is assigned or when battalion endurance is 0.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Alois"><img class="churchOfSeiros" src="~/img/data/characters/alois.png" title="Alois" /><br />Alois Rangeld</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/rally-luck.png" title="Compassion" /><b>Compassion</b><br /><i>Use Rally to grant LCK +8 to an ally.</i></p>
+                    </div>
+                </div>
+                @* Shamir *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Shamir"><img class="churchOfSeiros" src="~/img/data/characters/shamir.png" title="Shamir" /><br />Shamir Nevrand</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/survival-instinct.png" title="Survival Instinct" /><b>Survival Instinct</b><br /><i>If unit initiates combat and defeats foe, grants STR/MAG/DEX/SPD +4 for 1 turn.</i></p>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            @* Ashen Wolves *@
+            <h3 id="ashenWolves" style="text-align: center;">Ashen Wolves</h3>
+            <div class="container-fluid" style="margin-top: 20px;">
+                @* Yuri & Balthus *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Yuri"><img class="ashenWolves dlc" src="~/img/data/characters/yuri-mixed.png" title="Yuri" /><br />Yuri Leclerc</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/honorable-spirit.png" title="Honorable Spirit" /><b>Honorable Spirit</b><br /><i>If unit is not near an ally, grants ATK +3 when in combat with a foe one space away.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Balthus"><img class="ashenWolves dlc" src="~/img/data/characters/balthus-mixed.png" title="Balthus" /><br />Balthus von Albrecht</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/king-of-grappling.png" title="King of Grappling" /><b>King of Grappling</b><br /><i>Grants STR/DEF +6 when HP is less or equal to 50%.</i></p>
+                    </div>
+                </div>
+                @* Hapi & Constance *@
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Hapi"><img class="ashenWolves dlc" src="~/img/data/characters/hapi-mixed.png" title="Hapi" /><br />Hapi</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/monstrous-appeal.png" title="Monstrous Appeal" /><b>Monstrous Appeal</b><br /><i>Makes all attacks effective against monsters and makes it easier for monsters to target unit.</i></p>
+                    </div>
+                    <div class="col-sm-2" style="text-align: center;">
+                        <p><a asp-controller="Character" asp-action="Constance"><img class="ashenWolves dlc" src="~/img/data/characters/constance-mixed.png" title="Constance" /><br />Constance von Nuvelle</a></p>
+                    </div>
+                    <div class="col-sm-4" style="margin-top: 3vh;">
+                        <p><img class="ability" src="~/img/data/abilities/circadian-beat.png" title="Circadian Beat" /><b>Circadian Beat</b><br /><i>Grants STR/MAG +3 when indoors and DEF/RES +3 when outdoors.</i></p>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            @* Class Abilities *@
+            <h2 style="text-align: center;">Class Abilities</h2>
+            @* Unique Classes *@
+            <h3 id="uniqueClass" style="text-align: center" ;>Unique Classes</h3>
+        </div>
     </div>
 </div>
